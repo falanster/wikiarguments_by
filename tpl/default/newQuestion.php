@@ -49,8 +49,8 @@ $language   = $sTemplate->getLangBase();
         <div class = "row">
           <div class = "label"><?php echo $sTemplate->getString("NEW_QUESTION_TITLE"); ?></div>
           <div class = "input">
-            <textarea id = "new_question_title" name = "new_question_title" maxlength="<?phpecho MAX_QUESTION_CHR_LENGTH ?>"></textarea>
-            <span class="characters_left"><span id="new_question_title_chars_left"><?phpecho MAX_QUESTION_CHR_LENGTH ?></span> <?php echo $sTemplate->getString("CHARS_WRITTEN_LEFT"); ?> </span>
+            <textarea id = "new_question_title" name = "new_question_title" maxlength="<?php echo MAX_QUESTION_CHR_LENGTH ?>"></textarea>
+            <span class="characters_left"><span id="new_question_title_chars_left"><?php echo MAX_QUESTION_CHR_LENGTH ?></span> <?php echo $sTemplate->getString("CHARS_WRITTEN_LEFT"); ?> </span>
           </div>
         </div>
 
@@ -65,7 +65,7 @@ $language   = $sTemplate->getLangBase();
         <div class = "row">
           <div class = "label"><?php echo $sTemplate->getString("NEW_QUESTION_TAGS"); ?></div>
           <div class = "input">
-            <textarea id = "new_question_tags" name = "new_question_tags" maxlength="<?phpecho MAX_TAGS_CHR_LENGTH ?>"></textarea>
+            <textarea id = "new_question_tags" name = "new_question_tags" maxlength="<?php echo MAX_TAGS_CHR_LENGTH ?>"></textarea>
             <span class="characters_left"><?php echo $sTemplate->getString("TAGS_DIVIDE"); ?> <span id="new_question_tags_chars_left"><?echo MAX_TAGS_CHR_LENGTH ?></span> <?php echo $sTemplate->getString("CHARS_WRITTEN_LEFT"); ?></span>
           </div>
         </div>

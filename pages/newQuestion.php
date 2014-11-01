@@ -105,7 +105,7 @@ class PageNewQuestion extends Page
         }
 
 
-        $questionParsed = preg_replace("/[^0-9a-zÄÖÜäöüßáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $question);
+        $questionParsed = preg_replace("/[^0-9\w\[\]\{\} -]/iu", "", $question);
 
         if($question == "" || $questionParsed == "")
         {

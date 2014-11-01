@@ -1,15 +1,3 @@
-SET NAMES 'UTF8';
-
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-
---
--- Database: `wikiargument`
---
-
---
--- Dumping data for table `localization`
---
-
 INSERT INTO `localization` (`loc_key`, `loc_language`, `loc_val`) VALUES
 ('ACCOUNT_FORGOT_PASSWORD_EMAIL_BODY_STEP1', 'ru', 'Уважаемый участник Wikiarguments,\r\n<br><br>\r\nПожалуйста, перейдите по ссылке для получения нового пароля: [NEW_PASS_CONFIRM_LINK]\r\n<br><br>\r\nКоманда Wikiarguments'), 
 ('ACCOUNT_FORGOT_PASSWORD_EMAIL_BODY_STEP2', 'ru', 'Уважаемый участник Wikiarguments,\r\n<br><br>\r\nновый пароль для вас сгенерирован.\r\n<br><br>\r\nВаш новый пароль: [PASSWORD]\r\n<br><br>\r\nДля повышения безопасности аккаунта смените пароль после входа в кабинет пользователя.\r\n<br><br>\r\nКоманда Wikiarguments'),
