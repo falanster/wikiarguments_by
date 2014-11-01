@@ -144,7 +144,6 @@ INSERT INTO `localization` (`loc_key`, `loc_language`, `loc_val`) VALUES
 ('NOTICE_CONFIRMATION_ERROR_INVALID_USER', 'ru', 'NOTICE_CONFIRMATION_ERROR_INVALID_USER'),
 ('NOTICE_CONFIRMATION_SUCCESS', 'ru', 'Ваша регистрация успешно завершена.'),
 ('NOTICE_NEW_ARGUMENT_NOT_CHECKED_IN', 'ru', 'Необходимо войти, чтобы создавать новые аргументы.'),
-('NOTICE_NEW_ARGUMENT_NOT_CHECKED_IN', 'ru', 'Необходимо войти, чтобы создавать новые аргументы.'),
 ('NOTICE_NEW_ARGUMENT_NO_PERMISSION', 'ru', 'NOTICE_NEW_ARGUMENT_NO_PERMISSION'),
 ('NOTICE_NEW_COUNTER_ARGUMENT_NO_PERMISSION', 'ru', 'NOTICE_NEW_COUNTER_ARGUMENT_NO_PERMISS'),
 ('NOTICE_NEW_QUESTION_NO_PERMISSION', 'ru', 'Недостаточно прав для составления вопроса.'),
