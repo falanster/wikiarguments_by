@@ -54,6 +54,7 @@ class PageNewArgument extends Page
         if(!$this->question)
         {
             $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
+//            $sTemplate->error($sTemplate->"Hello error 6");
         }
 
         if($sRequest->getInt("new_argument"))
@@ -83,6 +84,7 @@ class PageNewArgument extends Page
         if(!$this->question)
         {
             $this->setError($sTemplate->getString("ERROR_INVALID_QUESTION"));
+//            $this->setError($sTemplate->"Hello error 7");
             return false;
         }
 
