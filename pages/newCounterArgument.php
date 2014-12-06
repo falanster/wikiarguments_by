@@ -149,7 +149,7 @@ class PageNewCounterArgument extends Page
 
         $headline       = $sRequest->getStringPlain("new_argument_headline");
         $headline       = mb_substr($headline, 0, MAX_ARGUMENT_HEADLINE_CHR_LENGTH, 'utf-8');
-        $headlineParsed = preg_replace("/[^0-9a-zÄÖÜäöüáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $headline);
+        $headlineParsed = preg_replace("/[^\W\w\[\]\{\} -]/i", "", $headline);
 
         $abstract = $sRequest->getStringPlain("new_argument_abstract");
         $abstract = mb_substr($abstract, 0, MAX_ARGUMENT_ABS_CHR_LENGTH, 'utf-8');
