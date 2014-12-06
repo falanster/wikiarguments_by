@@ -453,7 +453,7 @@ function drawQuestionDistribution(Question $q)
   <form action = '".$q->url()."' method = 'POST' id = 'faction_checkin_pro' onsubmit = '".$onSubmit."'>
     <input type = 'hidden' name = 'faction' value = '".FACTION_PRO."' />
     <input type = 'hidden' name = 'faction_select' value = '1' />
-    <button class = 'checkin_pro' >"..$sTemplate->getString("CHECKIN_BUTTON")."</button>
+    <button class = 'checkin_pro' >".$sTemplate->getString("CHECKIN_BUTTON")."</button>
   </form>";
     }else
     {
@@ -484,7 +484,7 @@ function drawQuestionDistribution(Question $q)
   <form action = '".$q->url()."' method = 'POST' id = 'faction_checkin_con' onsubmit = '".$onSubmit."'>
     <input type = 'hidden' name = 'faction' value = '".FACTION_CON."' />
     <input type = 'hidden' name = 'faction_select' value = '1' />
-    <button class = 'checkin_con' >"."Check in"."</button>
+    <button class = 'checkin_con' >".$sTemplate->getString("CHECKIN_BUTTON")."</button>
   </form>";
     }else
     {
