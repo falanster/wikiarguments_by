@@ -66,7 +66,9 @@ class MemcachedMgr
             {
                 $this->link_data->addServer($val[1], $val[2]);
             }
-        }
+	}
+	$this->link_session = $this->link_data = -1;
+        //}
     }
 
     /*
