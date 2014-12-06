@@ -49,6 +49,13 @@ header("Content-Type: text/css");
   src: local('Cantata One'), local('CantataOne-Regular'), url(<?php echo $sTemplate->getTemplateRoot(); ?>css/fonts/CantataOne-Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), local('Ubuntu-R'), url(<?php echo $sTemplate->getTemplateRoot(); ?>css/fonts/Ubuntu-R.ttf) format("truetype");
+}
+
 
 html, body, pre {
   padding: 0px;
@@ -83,46 +90,55 @@ a {
 }
 
 #header {
+  float: left;
   box-shadow: 3px 0 6px 3px #DDDDDD;
   -moz-box-shadow: 3px 0 6px 3px #DDDDDD;
   -webkit-box-shadow: 3px 0 6px 3px #DDDDDD;
   -o-box-shadow: 3px 0 6px 3px #DDDDDD;
-  position: relative;
+/*  position: relative; */
   height: 130px;
   width: 100%;
 }
 
-#header_blue {
-  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_background.png');
-  height: 54px;
-  width: 100%;
-  background-repeat: repeat-x;
-}
+
+//#header_blue {
+//  float: left;
+//  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_background.png');
+//  height: 54px;
+//  width: 100%;
+//  background-repeat: repeat-x;
+//}
+
 
 #header_white {
+  float: left;
   background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_navigation_background.png');
   height: 76px;
   width: 100%;
   background-repeat: repeat-x;
-  position: relative;
+/*  position: relative; */
 }
 
 #header_content {
-  position: absolute;
-  width: 1200px;
-  left: 50%;
-  margin-left: -600px;
-  top: 0px;
-  height: 130px;
+  float: left;
+/*  position: absolute; */
+/*  width: 1200px; */
+/*  left: 50%; */
+/*  margin-left: -600px; */ 
+/*  width: 80%; */
+/*  margin-top: -50px; */
+/*  top: 0px; */
+  height: 100px; 
 }
 
 #header_logo {
-  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_logo.png');
-  height: 18px;
-  width: 226px;
-  position: relative;
-  left: 30px;
-  top: 20px;
+  float: left;
+  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/ant_site_logo_2_mini.png');
+  height: 29px; 
+  width: 300px;
+/*  position: relative; */
+  margin-left: 30px;
+  margin-top: 20px;
 }
 
 #header_logo_custom {
@@ -153,8 +169,10 @@ a {
 }
 
 #header_navigation {
-  width: 980px;
-  position: relative;
+  float: left;
+/*  width: 980px; */
+  width: 100%;
+/*  position: relative; */
   left: 105px;
   top: 60px;
 }
@@ -200,7 +218,7 @@ width:45px;
 .navi_point a {
   color: #8E8E8E;
   font-size: 22px;
-  font-family:"Cantata One";
+  font-family:"Ubuntu";
   display:block;
 
 
@@ -212,10 +230,11 @@ width:45px;
 }
 
 #content {
-  position: relative;
+  float: left;
+/*  position: relative; */
   width: 950px;
   left: 50%;
-  margin-left: -475px;
+/*  margin-left: -475px; */
   padding-bottom:180px;
   padding-top: 15px;
 }
@@ -344,7 +363,7 @@ color:#87cbff;
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  font-family:"Cantata One";
+  font-family:"Ubuntu";
   clear:both;
 }
 
@@ -404,7 +423,7 @@ color:#87cbff;
   right: 8px;
   text-align: center;
   margin-top: 5px;
-  font-family:"Cantata One", serif;
+  font-family:"Ubuntu", serif;
 }
 
 .stats.question_stats .question_points_text{
@@ -505,7 +524,7 @@ position:absolute;
 
 .question_title a {
   color: #004A80;
-  font-family:"Cantata One", sans-serif;
+  font-family:"Ubuntu", sans-serif;
   font-size: 22px;
 }
 
@@ -675,7 +694,7 @@ padding-right:18px;
 .headline {
   font-size: 40px;
   color: #004a80;
-  font-family:"Cantata One", Tahome;
+  font-family:"Ubuntu", Tahome;
 }
 
 .icon_twitter {
@@ -861,7 +880,7 @@ color:#333;
   font-size: 22px;
   margin-top: 8px;
   margin-left: 20px;
-  font-family:"Cantata One";
+  font-family:"Ubuntu";
 }
 
 .con_perc {
@@ -870,7 +889,7 @@ color:#333;
   font-size: 22px;
   margin-top: 8px;
   margin-right: 20px;
-  font-family:"Cantata One";
+  font-family:"Ubuntu";
 }
 
 .distribution {
@@ -1039,7 +1058,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006ba3cc', e
   font-size: 20px;
   margin-left: 110px;
   margin-top: 20px;
-  font-family:"Cantata One";
+  font-family:"Ubuntu";
   font-size: 20px;
 }
 
@@ -1242,7 +1261,7 @@ left:0px;
 
 .argument_title a {
   color: #004A80;
-  font-family:"Cantata One";
+  font-family:"Ubuntu";
 }
 
 .argument_abstract_extended {
@@ -1295,7 +1314,7 @@ background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,
 
 
 .button_argument span{
-font-family:"Cantata One";
+font-family:"Ubuntu";
 width:100%;
 height:40px;
 padding-top:35px;
@@ -1657,14 +1676,14 @@ cursor: pointer;
 }
 
 .header_signup {
+  float: right;
   width: 175px;
   height: 20px;
-  top: 15px;
+  top: -50px;
   right: 0px;
   color: #87cbff;
   font-size: 16px;
-  position: absolute;
-
+/*  position: absolute; */
 }
 
 .header_signup a {
@@ -1818,7 +1837,7 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
 }
 
 #header_menu_wrapper {
-  position: absolute;
+/*  position: absolute; */
   top: 0px;
   height: 160px;
   left: 50%;
@@ -1864,7 +1883,7 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
   font-size: 40px;
   color: #707070;
   float: left;
-  font-family: Cantata One, Tahoma, Geneva, sans-serif;
+  font-family: Ubuntu, Tahoma, Geneva, sans-serif;
 }
 
 .profile_score_questions .score_text,
@@ -2166,7 +2185,7 @@ margin-left:175px;
 #user_tips h3{
 margin-top:35px;
 color:#004a80;
-font-family:"Cantata One", sans-serif
+font-family:"Ubuntu", sans-serif
 font-size:20px;
 }
 
@@ -2509,7 +2528,7 @@ small {
   float: left;
   margin-bottom: 30px;
   background-color: #FFFFFF;
-  font-family: "Cantata One";
+  font-family: "Ubuntu";
 }
 
 .sponsor .title {
