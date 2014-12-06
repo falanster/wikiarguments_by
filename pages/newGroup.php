@@ -86,7 +86,9 @@ class PageNewGroup extends Page
 
         $title          = substr($sRequest->getStringPlain("new_group_title"), 0, MAX_GROUP_NAME_CHR_LENGTH);
         $visibility     = $sRequest->getInt("new_group_visibility");
-        $titleParsed    = preg_replace("/[^0-9a-zÄÖÜäöüáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $title);
+//        $titleParsed    = preg_replace("/[^0-9a-zÄÖÜäöüáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $title);
+        $titleParsed    = preg_replace("/[^\W\w\[\]\{\} -]/i", "", $title);
+
 
         if($title == "")
         {

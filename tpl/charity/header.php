@@ -119,10 +119,11 @@ var wikiargument = new _Wikiargument('');
   <div id = "wrapper">
     <div id = "header">
 
-      <div id = "header_blue"></div>
-      <div id = "header_white"></div>
+   <!-- <div id = "header_blue"></div> -->
+      
 
       <div id = "header_content">
+       <div id = "header_white">
 <?php if($sPage->group() && $sPage->group()->url()) { ?>
         <a href = '<?php echo $sTemplate->getRoot()."groups/".$sPage->group()->url()."/"; ?>'>
           <div id = "header_logo_custom" style = "background: url('<?php echo $sTemplate->getRoot(); ?>custom/<?php echo $sPage->group()->groupId(); ?>/logo.png') no-repeat;"></div>
@@ -147,7 +148,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
     }
 }
 
-?>
+?> </div>
 
         <div id = "header_navigation">
           <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
