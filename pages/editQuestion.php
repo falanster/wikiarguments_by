@@ -138,6 +138,7 @@ class PageEditQuestion extends Page
             return false;
         }
 
+
         $tags           = Array();
         $tagsNoQuestion = $this->tagsByString($tagsRaw);
 

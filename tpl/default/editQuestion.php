@@ -59,8 +59,8 @@ foreach($sPage->question()->tags() as $k => $v)
         <div class = "row">
           <div class = "label"><?php echo $sTemplate->getString("NEW_QUESTION_TITLE"); ?></div>
           <div class = "input">
-            <textarea id = "new_question_title" name = "new_question_title" maxlength="<?phpecho MAX_QUESTION_CHR_LENGTH; ?>"><?php echo $sPage->question()->titlePlain(); ?></textarea>
-            <span class="characters_left"><span id="new_question_title_chars_left"><?phpecho MAX_QUESTION_CHR_LENGTH - strlen($sPage->question()->title()); ?></span> <?php echo $sTemplate->getString("CHARS_WRITTEN_LEFT"); ?> </span>
+            <textarea id = "new_question_title" name = "new_question_title" maxlength="<?php echo MAX_QUESTION_CHR_LENGTH; ?>"><?php echo $sPage->question()->titlePlain(); ?></textarea>
+            <span class="characters_left"><span id="new_question_title_chars_left"><?php echo MAX_QUESTION_CHR_LENGTH - strlen($sPage->question()->title()); ?></span> <?php echo $sTemplate->getString("CHARS_WRITTEN_LEFT"); ?> </span>
           </div>
         </div>
 
