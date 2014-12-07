@@ -1433,6 +1433,7 @@ clear:both;}
   margin-right:20px;
   margin-top:6px;
   text-align: right;
+  margin-right: 10px;
 }
 
 .new_argument .input {
@@ -1480,6 +1481,7 @@ clear:both;}
   line-height:20px;
   margin-top:5px;
   text-align: right;
+  margin-right: 10px;
 }
 
 
@@ -1500,7 +1502,7 @@ clear:both;}
 .new_question .input {
   width: 520px;
   position: relative;
-  margin-left: 90px;
+  margin-left: 120px;
 }
 
 .new_question textarea {
@@ -1681,6 +1683,7 @@ cursor: pointer;
   font-size: 16px;
   font-family: Imprima, Tahoma, Geneva, sans-serif;
   text-align: right;
+  margin-right: 10px;
 }
 
 .signup .input,
