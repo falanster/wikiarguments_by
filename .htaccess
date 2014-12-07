@@ -2,6 +2,7 @@ Allow from all
 RewriteEngine on
 
 RewriteRule ^imprint/$                                                          index.php?pageTitle=imprint [L]
+RewriteRule ^about/$                                                            index.php?pageTitle=about [L]
 RewriteRule ^faq/$                                                              index.php?pageTitle=faq [L]
 
 RewriteRule ^([0-9]+)/$                                                         index.php?pageTitle=default&page=$1&sort=0 [L]
