@@ -1423,7 +1423,7 @@ clear:both;}
 }
 
 .new_argument .label {
-  width: 70px;
+  width: 120px;
   float: left;
   position: relative;
   font-weight: bold;
@@ -1432,6 +1432,7 @@ clear:both;}
   font-family:'Imprima', sans-serif;
   margin-right:20px;
   margin-top:6px;
+  text-align: right;
 }
 
 .new_argument .input {
@@ -1478,6 +1479,7 @@ clear:both;}
   font-family: Imprima, Tahoma, Geneva, sans-serif;
   line-height:20px;
   margin-top:5px;
+  text-align: right;
 }
 
 
@@ -1490,7 +1492,8 @@ clear:both;}
   font-family: Imprima, Tahoma, Geneva, sans-serif;
   line-height:20px;
   margin-top:5px;
-  margin-right: 20px
+  margin-right: 20px;
+  text-align: right;
 }
 
 
@@ -1677,6 +1680,7 @@ cursor: pointer;
   position: relative;
   font-size: 16px;
   font-family: Imprima, Tahoma, Geneva, sans-serif;
+  text-align: right;
 }
 
 .signup .input,
