@@ -251,12 +251,16 @@ width:45px;
 #content {
 /*  float: left; */
 /*  position: relative; */
-  width: 950px;
+/*  width: 950px; */
   left: 50%;
 /*  margin-left: -475px; */
-  padding-bottom:180px;
+/*  padding-bottom:180px; */
   padding-top: 15px;
   margin: 30px auto;
+  max-width: 1000px;
+  min-width: 760px;
+  width: auto;
+  
 }
 
 #content_wide {
@@ -420,7 +424,8 @@ color:#87cbff;
 
 
 .question {
-  width: 950px;
+  min-width: 760px;
+  width: 100%;
   border: 1px solid #B5B5B5;
   border-radius: 20px;
   -webkit-border-radius: 20px;
