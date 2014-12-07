@@ -53,7 +53,8 @@ class PageEditArgument extends Page
 
         if(!$this->question)
         {
-            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
+//            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
+            $sTemplate->error($sTemplate->getString("Hello error 10"));
         }
 
         foreach($this->question->arguments() as $k => $v)
@@ -104,7 +105,8 @@ class PageEditArgument extends Page
 
         if(!$this->question)
         {
-            $this->setError($sTemplate->getString("ERROR_INVALID_QUESTION"));
+//            $this->setError($sTemplate->getString("ERROR_INVALID_QUESTION"));
+            $this->setError($sTemplate->getString("Hello error 11"));
             return false;
         }
 
@@ -157,7 +159,6 @@ class PageEditArgument extends Page
         $headline       = mb_substr($headline, 0, MAX_ARGUMENT_HEADLINE_CHR_LENGTH, 'utf-8');
         $headlineParsed = preg_replace("/[^\W\w\[\]\{\} -]/i", "", $headline);
 //        $headlineParsed = preg_replace("/[^0-9a-zÄÖÜäöüáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $headline);
-
         $abstract = $sRequest->getStringPlain("new_argument_abstract");
         $abstract = mb_substr($abstract, 0, MAX_ARGUMENT_ABS_CHR_LENGTH, 'utf-8');
 

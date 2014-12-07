@@ -105,7 +105,7 @@ class PageNewQuestion extends Page
         }
 
 
-        $questionParsed = preg_replace("/[^0-9\w\[\]\{\} -]/iu", "", $question);
+        $questionParsed = preg_replace("/[^0-9\w\W\[\]\{\} -]/iu", "", $question);
 
         if($question == "" || $questionParsed == "")
         {
@@ -207,7 +207,7 @@ class PageNewQuestion extends Page
 
         foreach($tagsRaw as $k => $v)
         {
-            $v = preg_replace('/[^a-z0-9ÄÖÜöäüáàâéèêíìîóòôúùûß\[\]\{\}_-]/i', '', $v);
+            $v = preg_replace('/[^a-z0-9\W\w\[\]\{\}_-]/i', '', $v);
             $v = trim($v, "-");
 
             if($v != "")
