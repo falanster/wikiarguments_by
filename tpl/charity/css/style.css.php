@@ -213,12 +213,12 @@ a {
 .navi_point {
    float:left;
   height: 61px;
-  margin-right: 49px;
-  padding-left:20px;
-  padding-right:20px;
-  position: relative;
-  min-width:44px;
-
+  margin-left: 30px;
+/*  margin-right: 49px; */
+/*  padding-left:20px; */
+/*  padding-right: 0px; */
+/*  position: relative; */
+  min-width:80px;
 }
 
 .navi_point.trend{
@@ -288,6 +288,7 @@ width:45px;
   height:24px;
   font-size:16px;
   margin-right: 20px;
+  margin-top: 0px;
 }
 
 #footer {
@@ -1702,7 +1703,7 @@ cursor: pointer;
   float: right;
   width: 175px;
   height: 20px;
-  margin-top: -70px;
+  margin-top: -75px;
   margin-right: -20px;
   color: #87cbff;
   font-size: 16px;
@@ -1718,14 +1719,16 @@ cursor: pointer;
 }
 
 .header_menu {
-  position: absolute;
+	float: right;
+	margin-top: -75px;
+ /* position: absolute; */
   color: transparent;
   font-size: 12px;
   width: 150px;
   height: 44px;
-  text-align: right;
-  top: 10px;
-  right: 0px;
+/*  text-align: right; */
+/*  top: 10px; */
+/*  right: 0px; */
   cursor:pointer;
 }
 
@@ -1734,8 +1737,8 @@ cursor: pointer;
   height: 34px;
   width: 150px;
   padding-top: 10px;
-  text-align: center;
-  position: relative;
+  text-align: right;
+  position: relative; 
   font-family: Imprima, Tahoma, Geneva, sans-serif;
   font-size:15px;
   text-transform:capitalize;
@@ -1754,8 +1757,6 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 *filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4188c8', endColorstr='#3275b7',GradientType=0 );
-
-
 
 }
 
@@ -1778,6 +1779,9 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  
+  position: relative;
+  z-index: 5;
 }
 
 .header_menu:hover .hidden {
