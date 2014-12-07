@@ -148,13 +148,30 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
     }
 }
 
-?> </div>
+?> 
+
+	<div id = "header_nav_top">
+          <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
+          <div class = "nav_top_point top <?php echo $topActive ? "current_page" : "";?>">
+            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
+          </div>
+
+          <div class = "nav_top_point neu <?php echo $newestActive ? "current_page" : "";?>">
+            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
+          </div>
+          </form>
+	</div>
+</div>
+          
 
         <div id = "header_navigation">
           <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
-          <div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
+<!--
+	      <div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
+
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTrending; ?>'><?php echo $sTemplate->getString("NAVIGATION_WHATS_HOT"); ?></a>
-          </div>
+          </div> 
+-->
 
           <div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
