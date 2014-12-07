@@ -1502,7 +1502,7 @@ clear:both;}
 .new_question .input {
   width: 520px;
   position: relative;
-  margin-left: 120px;
+  margin-left: 130px;
 }
 
 .new_question textarea {
