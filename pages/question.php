@@ -51,8 +51,7 @@ class PageQuestion extends Page
 
         if(!$this->question)
         {
-//            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
-            $sTemplate->error($sTemplate->getString("Hello error 8"));
+            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
         }
 
         if($sRequest->getInt("vote_select"))

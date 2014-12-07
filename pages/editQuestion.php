@@ -51,8 +51,7 @@ class PageEditQuestion extends Page
 
         if(!$this->question || $this->question->authorId() != $sUser->getUserId())
         {
-//            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
-            $sTemplate->error($sTemplate->getString("Hello error 5"));
+            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
         }
 
         if(!$this->question->canEdit($sUser))
@@ -136,7 +135,6 @@ class PageEditQuestion extends Page
         if($question == "" || $questionParsed == "")
         {
             $this->setError($sTemplate->getString("ERROR_NEW_QUESTION_INVALID_QUESTION"));
-		echo "echo!!!!!!!!!";
             return false;
         }
 
