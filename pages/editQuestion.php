@@ -131,7 +131,7 @@ class PageEditQuestion extends Page
 
 
 //        $questionParsed = preg_replace("/[^0-9a-zÄÖÜäöüáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $question);
-        $questionParsed = preg_replace("/[\W\w\[\]\{\} -]/i", "", $question);
+        $questionParsed = preg_replace("/[^\W\w\[\]\{\} -]/i", "", $question);
 
         if($question == "" || $questionParsed == "")
         {
