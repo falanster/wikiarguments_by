@@ -106,6 +106,8 @@ class PageEditQuestion extends Page
 
     public function handleEditQuestion()
     {
+
+	
         global $sRequest, $sTemplate, $sUser, $sPermissions;
 
         if(!$sUser->isLoggedIn() || $sPermissions->getPermission($sUser, ACTION_NEW_QUESTION) == PERMISSION_DISALLOWED)
@@ -134,7 +136,7 @@ class PageEditQuestion extends Page
         if($question == "" || $questionParsed == "")
         {
             $this->setError($sTemplate->getString("ERROR_NEW_QUESTION_INVALID_QUESTION"));
-
+		echo "echo!!!!!!!!!";
             return false;
         }
 
