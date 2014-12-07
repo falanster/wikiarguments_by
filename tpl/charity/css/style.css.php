@@ -1363,12 +1363,12 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 }
 
 .new_argument {
-  width: 600px;
+  width: 650px;
   margin-left: 175px;
 }
 
 .new_question {
-  width: 600px;
+  width: 650px;
   margin-left: 175px;
 }
 
@@ -1470,7 +1470,7 @@ clear:both;}
 }
 
 .new_question .label {
-  width: 90px;
+  width: 120px;
   float: left;
   position: relative;
   font-size: 16px;
@@ -1482,7 +1482,7 @@ clear:both;}
 
 
 .new_question .label2 {
-  width: 90px;
+  width: 120px;
   float: left;
   position: relative;
   font-size: 16px;
@@ -1495,7 +1495,7 @@ clear:both;}
 
 
 .new_question .input {
-  width: 510px;
+  width: 520px;
   position: relative;
   margin-left: 90px;
 }
