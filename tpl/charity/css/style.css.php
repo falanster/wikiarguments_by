@@ -190,6 +190,19 @@ a {
   color: #87CBFF;
 }
 
+#header_nav_top {
+	float: left;
+	margin: 15px;
+}
+
+.nav_top_point a {
+  float: left;
+  color: #8E8E8E;
+  font-size: 18px;
+  font-family:"Ubuntu";
+  text-transform:lowercase;
+}
+
 #wrapper {
   float: left;
   width: 100%;
@@ -228,8 +241,6 @@ width:45px;
   font-size: 22px;
   font-family:"Ubuntu";
   display:block;
-
-
 }
 
 .navi_point a:hover {
@@ -276,6 +287,7 @@ width:45px;
   letter-spacing: 0.3px;
   height:24px;
   font-size:16px;
+  margin-right: 20px;
 }
 
 #footer {
@@ -1690,16 +1702,18 @@ cursor: pointer;
   float: right;
   width: 175px;
   height: 20px;
-  margin-top: -50px;
-  right: 0px;
+  margin-top: -70px;
+  margin-right: -20px;
   color: #87cbff;
   font-size: 16px;
+  font-family:"Ubuntu";
 /*  position: absolute; */
+
 }
 
 .header_signup a {
    color: #7EC2F7;
-   text-shadow: 0 -1px #011A2D;
+/*   text-shadow: 0 -1px #011A2D; */
    font-size: 18px;
 }
 
