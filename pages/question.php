@@ -117,7 +117,7 @@ class PageQuestion extends Page
 
         if(!$this->question)
         {
-//            $this->setError($sTemplate->getString("ERROR_INVALID_QUESTION"));
+            $this->setError($sTemplate->getString("ERROR_INVALID_QUESTION"));
             $this->setError($sTemplate->getString("Hello error 9"));
             return false;
         }
