@@ -146,7 +146,7 @@ class PageNewGroup extends Page
         }
 
 //        $this->redirectUrl = $sTemplate->getRoot()."groups/".$url."/manange-group/";
-        $this->redirectUrl = $sTemplate->getRoot()."groups/".$url."/manage-group/";
+        $this->redirectUrl = $sTemplate->getRoot()."groups/".$url."/";
         
         return $groupId;
     }
