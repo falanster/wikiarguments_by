@@ -79,6 +79,8 @@ include("./pages/editQuestion.php");
 include("./pages/editArgument.php");
 include("./pages/editCounterArgument.php");
 include("./pages/faq.php");
+include("./pages/about.php");
+include("./pages/usageManual.php");
 
 mt_srand(time());
 
