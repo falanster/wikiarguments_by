@@ -101,7 +101,7 @@ foreach($sPage->question()->tags() as $k => $v)
         </div>
 
         <div class = "row row_submit">
-            <span class = "button_orange" onclick = "$('#form_edit_question').submit(); $(this).attr('disabled','disabled'); return false;">123123123<?php echo $sTemplate->getString("SUBMIT_NEW_QUESTION"); ?></span>
+            <span class = "button_orange" onclick = "$('#form_edit_question').submit(); $(this).attr('disabled','disabled'); return false;"><?php echo $sTemplate->getString("SUBMIT_NEW_QUESTION"); ?></span>
         </div>
       </div>
       <input type = "hidden" name = "edit_question" value = "1" />

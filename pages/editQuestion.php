@@ -51,8 +51,7 @@ class PageEditQuestion extends Page
 
         if(!$this->question || $this->question->authorId() != $sUser->getUserId())
         {
-//            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
-            $sTemplate->error($sTemplate->getString("Hello error 5"));
+            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
         }
 
         if(!$this->question->canEdit($sUser))
@@ -106,6 +105,8 @@ class PageEditQuestion extends Page
 
     public function handleEditQuestion()
     {
+
+	
         global $sRequest, $sTemplate, $sUser, $sPermissions;
 
         if(!$sUser->isLoggedIn() || $sPermissions->getPermission($sUser, ACTION_NEW_QUESTION) == PERMISSION_DISALLOWED)
@@ -129,12 +130,11 @@ class PageEditQuestion extends Page
 
 
 //        $questionParsed = preg_replace("/[^0-9a-zÄÖÜäöüáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $question);
-        $questionParsed = preg_replace("/[\W\w\[\]\{\} -]/i", "", $question);
+        $questionParsed = preg_replace("/[^\W\w\[\]\{\} -]/i", "", $question);
 
         if($question == "" || $questionParsed == "")
         {
             $this->setError($sTemplate->getString("ERROR_NEW_QUESTION_INVALID_QUESTION"));
-
             return false;
         }
 

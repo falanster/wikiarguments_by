@@ -1368,12 +1368,12 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 }
 
 .new_argument {
-  width: 600px;
+  width: 650px;
   margin-left: 175px;
 }
 
 .new_question {
-  width: 600px;
+  width: 650px;
   margin-left: 175px;
 }
 
@@ -1428,7 +1428,7 @@ clear:both;}
 }
 
 .new_argument .label {
-  width: 70px;
+  width: 120px;
   float: left;
   position: relative;
   font-weight: bold;
@@ -1437,6 +1437,8 @@ clear:both;}
   font-family:'Imprima', sans-serif;
   margin-right:20px;
   margin-top:6px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .new_argument .input {
@@ -1475,7 +1477,7 @@ clear:both;}
 }
 
 .new_question .label {
-  width: 90px;
+  width: 120px;
   float: left;
   position: relative;
   font-size: 16px;
@@ -1483,11 +1485,13 @@ clear:both;}
   font-family: Imprima, Tahoma, Geneva, sans-serif;
   line-height:20px;
   margin-top:5px;
+  text-align: right;
+  margin-right: 10px;
 }
 
 
 .new_question .label2 {
-  width: 90px;
+  width: 120px;
   float: left;
   position: relative;
   font-size: 16px;
@@ -1495,14 +1499,15 @@ clear:both;}
   font-family: Imprima, Tahoma, Geneva, sans-serif;
   line-height:20px;
   margin-top:5px;
-  margin-right: 20px
+  margin-right: 20px;
+  text-align: right;
 }
 
 
 .new_question .input {
-  width: 510px;
+  width: 520px;
   position: relative;
-  margin-left: 90px;
+  margin-left: 130px;
 }
 
 .new_question textarea {
@@ -1682,6 +1687,8 @@ cursor: pointer;
   position: relative;
   font-size: 16px;
   font-family: Imprima, Tahoma, Geneva, sans-serif;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .signup .input,

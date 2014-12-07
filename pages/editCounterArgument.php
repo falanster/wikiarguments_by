@@ -55,8 +55,7 @@ class PageEditCounterArgument extends Page
 
         if(!$this->question)
         {
-//            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
-            $sTemplate->error($sTemplate->getString("Hello error 3"));
+            $sTemplate->error($sTemplate->getString("ERROR_INVALID_QUESTION"));
         }
 
         foreach($this->question->arguments() as $k => $v)
@@ -115,8 +114,7 @@ class PageEditCounterArgument extends Page
 
         if(!$this->question)
         {
-//            $this->setError($sTemplate->getString("ERROR_INVALID_QUESTION"));
-            $this->setError($sTemplate->getString("Hello error 4"));
+            $this->setError($sTemplate->getString("ERROR_INVALID_QUESTION"));
             return false;
         }
 
