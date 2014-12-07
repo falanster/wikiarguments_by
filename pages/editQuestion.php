@@ -131,13 +131,13 @@ class PageEditQuestion extends Page
 //        $questionParsed = preg_replace("/[^0-9a-zÄÖÜäöüáàâéèêíìîóòôúùû\[\]\{\} -]/i", "", $question);
         $questionParsed = preg_replace("/[\W\w\[\]\{\} -]/i", "", $question);
 
-/*        if($question == "" || $questionParsed == "")
+        if($question == "" || $questionParsed == "")
         {
             $this->setError($sTemplate->getString("ERROR_NEW_QUESTION_INVALID_QUESTION"));
 
             return false;
         }
-*/
+
 
         $tags           = Array();
         $tagsNoQuestion = $this->tagsByString($tagsRaw);
