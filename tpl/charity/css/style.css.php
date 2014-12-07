@@ -90,14 +90,15 @@ a {
 }
 
 #header {
-  float: left;
+  display:block;
   box-shadow: 3px 0 6px 3px #DDDDDD;
   -moz-box-shadow: 3px 0 6px 3px #DDDDDD;
   -webkit-box-shadow: 3px 0 6px 3px #DDDDDD;
   -o-box-shadow: 3px 0 6px 3px #DDDDDD;
 /*  position: relative; */
   height: 130px;
-  width: 100%;
+  width: 80%;
+  margin:0 auto;
 }
 
 
@@ -120,6 +121,7 @@ a {
 }
 
 #header_content {
+  display:block;
   float: left;
 /*  position: absolute; */
 /*  width: 1200px; */
@@ -129,6 +131,7 @@ a {
 /*  margin-top: -50px; */
 /*  top: 0px; */
   height: 100px; 
+  width: 100%; 
 }
 
 #header_logo {
@@ -174,7 +177,7 @@ a {
   width: 100%;
 /*  position: relative; */
   left: 105px;
-  top: 60px;
+  margin-top: 15px;
 }
 
 #header_sponsors {
@@ -187,10 +190,24 @@ a {
   color: #87CBFF;
 }
 
+#header_nav_top {
+	float: left;
+	margin: 15px;
+}
+
+.nav_top_point a {
+  float: left;
+  color: #8E8E8E;
+  font-size: 18px;
+  font-family:"Ubuntu";
+  text-transform:lowercase;
+}
+
 #wrapper {
+  float: left;
   width: 100%;
   min-height: 100%;
-  position: relative;
+/*  position: relative; */
 }
 
 .navi_point {
@@ -203,14 +220,18 @@ a {
   min-width:44px;
 
 }
+
 .navi_point.trend{
-width:111px;}
+	float: left;
+width:100px;}
 
 .navi_point.neu{
+	float: left;
 width:45px;
 }
 
 .navi_point:last-child{
+  float: right;
   margin-right: 0px;
   padding-right: 0px;
 }
@@ -220,8 +241,6 @@ width:45px;
   font-size: 22px;
   font-family:"Ubuntu";
   display:block;
-
-
 }
 
 .navi_point a:hover {
@@ -230,13 +249,14 @@ width:45px;
 }
 
 #content {
-  float: left;
+/*  float: left; */
 /*  position: relative; */
   width: 950px;
   left: 50%;
 /*  margin-left: -475px; */
   padding-bottom:180px;
   padding-top: 15px;
+  margin: 30px auto;
 }
 
 #content_wide {
@@ -256,15 +276,18 @@ width:45px;
 }
 
 #navi_search {
+  float: right;
   padding-left:5px;
-  width: 478px;
+  width: 200px;
   border: 1px solid #D2D2D2;
+  border-radius: 10px;
   color: #898989;
   height: 19px;
   font-family: 'Imprima', sans-serif;
   letter-spacing: 0.3px;
   height:24px;
   font-size:16px;
+  margin-right: 20px;
 }
 
 #footer {
@@ -1532,7 +1555,7 @@ box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
 -webkit-box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
 -o-box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
 
-width:120px;
+width: auto;
 
 }
 .button_orange:before{
@@ -1679,16 +1702,18 @@ cursor: pointer;
   float: right;
   width: 175px;
   height: 20px;
-  top: -50px;
-  right: 0px;
+  margin-top: -70px;
+  margin-right: -20px;
   color: #87cbff;
   font-size: 16px;
+  font-family:"Ubuntu";
 /*  position: absolute; */
+
 }
 
 .header_signup a {
    color: #7EC2F7;
-   text-shadow: 0 -1px #011A2D;
+/*   text-shadow: 0 -1px #011A2D; */
    font-size: 18px;
 }
 
@@ -1838,11 +1863,10 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
 
 #header_menu_wrapper {
 /*  position: absolute; */
-  top: 0px;
   height: 160px;
-  left: 50%;
-  z-index: 5;
-  margin-left: 600px;
+/*  left: 50%; */
+/*  z-index: 5; */
+  margin-right: 10px;
 }
 
 .signup_date {
