@@ -1437,7 +1437,7 @@ clear:both;}
   width: 120px;
   float: left;
   position: relative;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 16px;
   color: #000000;
   font-family:'Imprima', sans-serif;
