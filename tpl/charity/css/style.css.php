@@ -265,16 +265,21 @@ width:45px;
 
 #content_wide {
   position: relative;
-  width: 1200px;
-  left: 50%;
-  margin-left: -600px;
-  padding-bottom: 180px;
-  clear: both;
+  width: 90%;
+/*  left: 50%; */
+/*  margin-left: -600px; */
+  padding-bottom: 30px; 
+/*  clear: both; */
   padding-top: 15px;
+  display: block;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 760px;
 }
 
 .thin {
-  width: 950px;
+ /* width: 950px; */
+  float: left;
   margin-left: 125px;
   position: relative;
 }
@@ -1389,7 +1394,7 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 
 .row {
 
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .row_no_padding {
@@ -1419,8 +1424,9 @@ margin-top:20px;
 clear:both;}
 
 .row_submit {
+  float: left;
   height: 27px;
-  text-align: right;
+/*  text-align: right; */
 }
 
 .row.row_submit{
@@ -1666,14 +1672,15 @@ cursor: pointer;
   background: url("<?php echo $sTemplate->getTemplateRoot(); ?>img/backgrounds/register_bg.png") no-repeat scroll center 31px transparent;
     float: left;
     padding-bottom: 40px;
-    padding-right: 50px;
+    padding-right: 20px;
     width: 400px;
 }
 
 .login {
-  float: right;
+  float: left;
   width: 400px;
   padding-top: 18px;
+  padding-bottom: 40px;
 }
 
 .login .headline {
@@ -1682,20 +1689,23 @@ cursor: pointer;
 
 .signup .label,
 .login .label {
-  width: 130px;
+  width: 170px; 
   float: left;
   position: relative;
   font-size: 16px;
   font-family: Imprima, Tahoma, Geneva, sans-serif;
-  text-align: right;
-  margin-right: 10px;
+/*  text-align: right; */
+/*  margin-right: 10px; */
+  margin-bottom: 5px;
 }
 
 .signup .input,
 .login .input {
+  float: left;
   width: 270px;
   position: relative;
-  margin-left: 130px;
+/*  margin-left: 130px; */
+  margin-bottom: 20px;
 }
 
 .signup input,

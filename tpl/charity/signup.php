@@ -88,7 +88,7 @@ $language   = $sTemplate->getLangBase();
       <div class = "row">
         <div class = "headline"><?php echo $sTemplate->getString("LOGIN_HEADLINE"); ?></div>
       </div>
-      <div class = "row" style = "margin-top: 35px;">
+      <div class = "row" >
         <div class = "label"><?php echo $sTemplate->getString("LOGIN_USERNAME"); ?></div>
         <div class = "input">
           <input type = "text" id = "login_username" name = "login_username"></input>
