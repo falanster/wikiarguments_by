@@ -2749,3 +2749,7 @@ small {
 .cladm_navigation a {
   color: #484848;
 }
+
+/*insert external style files*/
+@import url('common.css');
+
