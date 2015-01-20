@@ -91,6 +91,7 @@ if($sPage->group())
 
   <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/jquery-ui-1.7.2.custom.css.php" />
   <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/style.css.php" />
+  <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/commons.css.php" />
 
 
 
