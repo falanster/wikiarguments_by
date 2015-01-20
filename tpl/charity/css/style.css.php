@@ -272,13 +272,13 @@ width:45px;
   padding-bottom: 30px; 
   padding-top: 15px;
   display: block;
-  margin: 0 auto;
+  margin: 2px auto;
   max-width: 1200px;
   min-width: 760px;
 }
 
 .thin {
-	margin: 30px auto;
+	margin: 0 auto;
 	max-width: 1000px;
 	min-width: 760px;
 	width: auto;
@@ -727,6 +727,7 @@ padding-right:18px;
   font-size: 40px;
   color: #004a80;
   font-family:"Ubuntu", Tahome;
+	margin: 25px 0;
 }
 
 .icon_twitter {
@@ -1377,7 +1378,8 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 
 .new_question {
   width: 650px;
-  margin-left: 175px;
+	float: left;
+  margin-bottom: 40px;
 }
 
 .profile {
@@ -1392,7 +1394,6 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 
 .row {
 
-  padding-top: 30px;
 }
 
 .row_no_padding {
@@ -1404,7 +1405,7 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 }
 
 .new_question .row{
-clear:both;
+	float: left;
 }
 
 #new_counter_argument .row{
@@ -1428,7 +1429,7 @@ clear:both;}
 }
 
 .row.row_submit{
-/* margin-top:60px; */
+ margin-top: 20px; 
 }
 
 .new_argument .label {
@@ -1481,7 +1482,7 @@ clear:both;}
 }
 
 .new_question .label {
-  width: 120px;
+  width: 520px;
   float: left;
   position: relative;
   font-size: 16px;
@@ -1489,8 +1490,8 @@ clear:both;}
   font-family: Imprima, Tahoma, Geneva, sans-serif;
   line-height:20px;
   margin-top:5px;
-  text-align: right;
   margin-right: 10px;
+	margin-bottom: 5px;
 }
 
 
@@ -1504,14 +1505,14 @@ clear:both;}
   line-height:20px;
   margin-top:5px;
   margin-right: 20px;
-  text-align: right;
+	margin-bottom: 5px;
 }
 
 
 .new_question .input {
+	float: left;
   width: 520px;
   position: relative;
-  margin-left: 130px;
 }
 
 .new_question textarea {
