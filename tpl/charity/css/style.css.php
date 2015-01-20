@@ -816,7 +816,6 @@ color:#333;
 }
 
 .vote_distribution {
-  width: 950px;
   height: 40px;
   position: relative;
 
@@ -925,7 +924,7 @@ color:#333;
   margin-top: -2px;
   margin-right: 20px;
   font-family:"Ubuntu";
-  width: 100%;
+  width: 100px;
   text-align: center;
 }
 
@@ -1015,7 +1014,7 @@ color:#333;
 }
 
 .arguments_pro {
-  width: 48%;
+  width: 49%;
   position: relative;
   float: left;
 }
@@ -1027,8 +1026,6 @@ color:#333;
 }
 
 .argument_wrapper {
-  width: 80%;
-  margin-top: 20px;
   position: relative;
 }
 
@@ -1146,7 +1143,7 @@ font-size:16px;
 
 .counter_argument_box_con {
 	float: right;
-	position: absolute;
+	position: relative;
 	top: 21px;
 	right: 15px;
 	z-index: 5;
@@ -1321,7 +1318,7 @@ left:0px;
 }
 
 .button_argument {
-  width: 440px;
+  width: 100%;
   padding-top: 50px;
   color: #707070;
   font-size: 22px;
