@@ -209,9 +209,8 @@ a {
 
 #wrapper {
   float: left;
-  width: 100%;
+  width: 99%;
   min-height: 100%;
-/*  position: relative; */
 }
 
 .navi_point {
@@ -269,11 +268,8 @@ width:45px;
 
 #content_wide {
   position: relative;
-  width: 90%;
-/*  left: 50%; */
-/*  margin-left: -600px; */
+  width: 99%;
   padding-bottom: 30px; 
-/*  clear: both; */
   padding-top: 15px;
   display: block;
   margin: 0 auto;
@@ -666,9 +662,9 @@ padding-right:18px;
 }
 
 .pagination_questions {
+	float: right;
   width: 550px;
-  left: 400px;
-  margin-top: 29px;
+  margin: 31px 0 20px;
 }
 
 .pagination {
@@ -929,7 +925,7 @@ color:#333;
 }
 
 .distribution {
-  width: 370px;
+  width: 35%;
   height: 30px;
   border: 0px solid #E8E8E8;
   border-radius: 15px;
@@ -940,7 +936,7 @@ color:#333;
   -webkit-box-shadow: 0 -1px 4px 2px #A0A0A0; */
   position: absolute;
   left: 50%;
-  margin-left: -185px;
+  margin-left: -17%;
   top: 7px;
   overflow: hidden;
 }
@@ -1732,7 +1728,7 @@ cursor: pointer;
   color: #87cbff;
   font-size: 16px;
   font-family:"Ubuntu";
-/*  position: absolute; */
+	position: relative; 
 
 }
 
