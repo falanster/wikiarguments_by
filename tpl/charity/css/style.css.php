@@ -534,13 +534,12 @@ position:absolute;
   font-size: 20px;
   position: relative;
   float:left;
-  width: 700px;
+  width: 73%;
   top: 12px;
 }
 
 .question_title p {
   margin: none;
-  width: 700px;
   vertical-align: top;
   display: block;
   margin-top:9px;
@@ -548,10 +547,10 @@ position:absolute;
 
 .question_details{
   float: left;
-  margin-bottom: 30px;
-  margin-left: 130px;
+	margin-top: 10px;
+  margin-bottom: 10px;
   position: relative;
-  width: 800px;;
+  width: 70%;
 }
 
 .question_title a {
@@ -769,7 +768,7 @@ color:#004A80;
 
 
 .question_tabs {
-  width: 950px;
+  width: 90%;
   margin-top: 20px;
   height: 26px;
   padding-left: 25px;
@@ -1052,7 +1051,7 @@ color:#333;
 }
 
 .argument_con_no_counter {
-  margin-left: 80px;
+  width: 100%;
 }
 
 .clear {
@@ -1225,9 +1224,8 @@ font-size:16px;
 }
 
 .argument_container {
-  width: 600px;
-  left: 50%;
-  margin-left: -300px;
+  width: 70%;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -1267,7 +1265,7 @@ font-size:16px;
 }
 
 .argument_extended {
-  width: 950px;
+  width: 100%;
   border: 1px solid #B5B5B5;
   border-radius: 20px;
   -moz-border-radius: 20px;
@@ -1360,7 +1358,7 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 }
 
 .button_new_counter_argument {
-  margin-left: 80px;
+
 }
 
 .button_new_argument_pro {
@@ -1372,8 +1370,10 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 }
 
 .new_argument {
+	float: left;
   width: 650px;
-  margin-left: 175px;
+  margin-bottom: 40px;
+	margin-top: 30px;
 }
 
 .new_question {
@@ -1433,7 +1433,7 @@ clear:both;}
 }
 
 .new_argument .label {
-  width: 120px;
+  width: 520px;
   float: left;
   position: relative;
   font-weight: normal;
@@ -1442,8 +1442,8 @@ clear:both;}
   font-family:'Imprima', sans-serif;
   margin-right:20px;
   margin-top:6px;
-  text-align: right;
-  margin-right: 10px;
+  margin-left: 10px;
+	margin-bottom: 5px;
 }
 
 .new_argument .input {
@@ -1949,6 +1949,7 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
 }
 
 .tags {
+	float: left;
   position: relative;
   width:60%;
   height:30px;
