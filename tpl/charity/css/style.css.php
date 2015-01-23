@@ -1374,12 +1374,14 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
   width: 650px;
   margin-bottom: 40px;
 	margin-top: 30px;
+	margin-left: 10px;
 }
 
 .new_question {
   width: 650px;
 	float: left;
   margin-bottom: 40px;
+  margin-left: 10px;
 }
 
 .profile {
@@ -1442,7 +1444,6 @@ clear:both;}
   font-family:'Imprima', sans-serif;
   margin-right:20px;
   margin-top:6px;
-  margin-left: 10px;
 	margin-bottom: 5px;
 }
 
@@ -1450,7 +1451,6 @@ clear:both;}
   width: 500px;
   float:left;
   position: relative;
-  margin-left: 10px;
 }
 
 .new_argument textarea {
