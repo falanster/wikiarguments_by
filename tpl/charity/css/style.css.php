@@ -1713,7 +1713,7 @@ cursor: pointer;
   float: right;
   width: 175px;
   height: 20px;
-  margin-top: -75px;
+  margin-top: 15px;
   margin-right: -20px;
   color: #87cbff;
   font-size: 16px;
