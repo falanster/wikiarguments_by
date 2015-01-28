@@ -128,6 +128,7 @@ a {
   display:block;
   float: left;
   height: 60px; 
+	width: 100%;
 	background: #004A80;
 }
 
@@ -855,8 +856,7 @@ color:#333;
 
 
 .checkin_pro_confirmed {
-  height: 46px;
-
+  height: 38px;
   float: left;
   position: relative;
   cursor: hand;
@@ -869,6 +869,8 @@ color:#333;
 /*  display: table-cell; */
   vertical-align: middle;
   height: 46px;
+	float: left;
+	width: 80px;
 }
 
 
@@ -940,18 +942,18 @@ color:#333;
   background: -moz-linear-gradient(top, #65a9d7, #0048a5);
   background: -ms-linear-gradient(top, #65a9d7, #0048a5);
   background: -o-linear-gradient(top, #65a9d7, #0048a5);
-  box-shadow: 0 2px 5px #000000 inset;
+/*  box-shadow: 0 2px 5px #000000 inset;
   -moz-box-shadow: 0 2px 5px #000000 inset;
   -webkit-box-shadow: 0 2px 5px #000000 inset;
   -ms-box-shadow: 0 2px 5px #000000 inset;
-  -o-box-shadow: 0 2px 5px #000000 inset;
+  -o-box-shadow: 0 2px 5px #000000 inset; */
 
   border-radius:15px;
   -moz-border-radius:15px;
   -o-border-radius:15px;
   -webkit-border-radius:15px;
 
-  width:372px!important;
+  width:100%!important;
 
 }
 
@@ -968,11 +970,11 @@ color:#333;
   background: -ms-linear-gradient(top, #f8b100, #ff5d00);
   background: -o-linear-gradient(top, #f8b100, #ff5d00);
 
-   box-shadow: -1px 3px 5px #211107 inset;
+/*   box-shadow: -1px 3px 5px #211107 inset;
    -moz-box-shadow: -1px 3px 5px #211107 inset;
    -ms-box-shadow: -1px 3px 5px #211107 inset;
    -o-box-shadow: -1px 3px 5px #211107 inset;
-   -webkit-box-shadow: -1px 3px 5px #211107 inset;
+   -webkit-box-shadow: -1px 3px 5px #211107 inset; */
 
    border-radius:15px 15px 15px 15px;
   -moz-border-radius:15px 15px 15px 15px;

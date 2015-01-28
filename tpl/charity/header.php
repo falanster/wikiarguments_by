@@ -162,7 +162,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           </div>
           </form>
 	</div>
-</div>
+
 
 	<?php if($sUser->isLoggedIn()) { ?>
         <div id = "header_menu" class = "header_menu">
@@ -190,7 +190,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
             <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNUP"); ?></a>
           </div>
 <?php } ?>
-          
+ </div>         
 
         <div id = "header_navigation">
           <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
