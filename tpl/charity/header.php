@@ -163,6 +163,33 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           </form>
 	</div>
 </div>
+
+	<?php if($sUser->isLoggedIn()) { ?>
+        <div id = "header_menu" class = "header_menu">
+          <div class = "username">
+            <?php echo htmlspecialchars($sUser->getUserName()); ?>
+            <div class = "up_arrow"></div>
+            <div class = "dn_arrow"></div>
+          </div>
+
+          <div class = "hidden profile_menu">
+            <ul class="user_profile_list">
+                <li><div class = "icon_new_question"></div><a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'><?php echo $sTemplate->getString("HEADER_NAVI_NEW_QUESTION"); ?></a></li>
+                <li><div class = "icon_share_page"></div><a href = '#' onclick = "wikiargument.sharePage('<?php echo $sPage->shortUrl() ? $sPage->shortUrl() : ''; ?>');"><?php echo $sTemplate->getString("HEADER_NAVI_SHARE_PAGE"); ?></a></li>
+                <li><div class = "icon_manage_profile"></div><a href = '<?php echo $sTemplate->getRoot(); ?>manage-profile/'><?php echo $sTemplate->getString("HEADER_NAVI_MANAGE_PROFILE"); ?></a></li>
+                <li><div class = "icon_my_profile"></div><a href = '<?php echo $sTemplate->getRoot(); ?>user/<?php echo $sUser->getUserId(); ?>/'><?php echo $sTemplate->getString("HEADER_NAVI_MY_PROFILE"); ?></a></li>
+                <li><div class = "icon_logout"></div><a href = '<?php echo $sTemplate->getRoot(); ?>logout/'><?php echo $sTemplate->getString("HEADER_NAVI_LOGOUT"); ?></a></li>
+<?php foreach($sUser->adminGroups() as $k => $g) { ?>
+                <li class = "user_profile_list_manage_group"><div class = "icon_new_group"></div><a href = '<?php echo $sTemplate->getRoot(); ?>groups/<?php echo $g->url(); ?>/manage-group/'><?php echo htmlspecialchars($g->title()); ?></a></li>
+<?php } ?>
+            </ul>
+          </div>
+        </div>
+<?php }else{ ?>
+          <div class = "header_signup">
+            <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNUP"); ?></a>
+          </div>
+<?php } ?>
           
 
         <div id = "header_navigation">
@@ -191,32 +218,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
       </div>
 
       <div id = "header_menu_wrapper">
-<?php if($sUser->isLoggedIn()) { ?>
-        <div id = "header_menu" class = "header_menu">
-          <div class = "username">
-            <?php echo htmlspecialchars($sUser->getUserName()); ?>
-            <div class = "up_arrow"></div>
-            <div class = "dn_arrow"></div>
-          </div>
 
-          <div class = "hidden profile_menu">
-            <ul class="user_profile_list">
-                <li><div class = "icon_new_question"></div><a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'><?php echo $sTemplate->getString("HEADER_NAVI_NEW_QUESTION"); ?></a></li>
-                <li><div class = "icon_share_page"></div><a href = '#' onclick = "wikiargument.sharePage('<?php echo $sPage->shortUrl() ? $sPage->shortUrl() : ''; ?>');"><?php echo $sTemplate->getString("HEADER_NAVI_SHARE_PAGE"); ?></a></li>
-                <li><div class = "icon_manage_profile"></div><a href = '<?php echo $sTemplate->getRoot(); ?>manage-profile/'><?php echo $sTemplate->getString("HEADER_NAVI_MANAGE_PROFILE"); ?></a></li>
-                <li><div class = "icon_my_profile"></div><a href = '<?php echo $sTemplate->getRoot(); ?>user/<?php echo $sUser->getUserId(); ?>/'><?php echo $sTemplate->getString("HEADER_NAVI_MY_PROFILE"); ?></a></li>
-                <li><div class = "icon_logout"></div><a href = '<?php echo $sTemplate->getRoot(); ?>logout/'><?php echo $sTemplate->getString("HEADER_NAVI_LOGOUT"); ?></a></li>
-<?php foreach($sUser->adminGroups() as $k => $g) { ?>
-                <li class = "user_profile_list_manage_group"><div class = "icon_new_group"></div><a href = '<?php echo $sTemplate->getRoot(); ?>groups/<?php echo $g->url(); ?>/manage-group/'><?php echo htmlspecialchars($g->title()); ?></a></li>
-<?php } ?>
-            </ul>
-          </div>
-        </div>
-<?php }else{ ?>
-          <div class = "header_signup">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNUP"); ?></a>
-          </div>
-<?php } ?>
       </div>
 
     </div>

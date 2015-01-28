@@ -73,7 +73,8 @@ html, body {
 }
 
 html {
-  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/background.png');
+/*  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/background.png'); */
+	background: #f2f2f2;
   background-repeat: repeat;
 }
 
@@ -95,13 +96,12 @@ a {
 
 #header {
   display:block;
-  box-shadow: 3px 0 6px 3px #DDDDDD;
+/*  box-shadow: 3px 0 6px 3px #DDDDDD;
   -moz-box-shadow: 3px 0 6px 3px #DDDDDD;
   -webkit-box-shadow: 3px 0 6px 3px #DDDDDD;
   -o-box-shadow: 3px 0 6px 3px #DDDDDD;
-/*  position: relative; */
-  height: 130px;
-  width: 80%;
+  position: relative; */
+  height: 100px;
   margin:0 auto;
 }
 
@@ -116,36 +116,29 @@ a {
 
 
 #header_white {
-  float: left;
-  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_navigation_background.png');
-  height: 76px;
-  width: 100%;
+/*  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_navigation_background.png');*/
+  height: 60px;
+  width: 90%;
   background-repeat: repeat-x;
 /*  position: relative; */
+	margin: 0 auto;
 }
 
 #header_content {
   display:block;
   float: left;
-/*  position: absolute; */
-/*  width: 1200px; */
-/*  left: 50%; */
-/*  margin-left: -600px; */ 
-/*  width: 80%; */
-/*  margin-top: -50px; */
-/*  top: 0px; */
-  height: 100px; 
-  width: 100%; 
+  height: 60px; 
+	background: #004A80;
 }
 
 #header_logo {
   float: left;
-  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/ant_site_logo_2_mini.png');
+  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/ant_site_logo_2_mini_2.png');
   height: 29px; 
   width: 300px;
 /*  position: relative; */
   margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 #header_logo_custom {
@@ -176,12 +169,11 @@ a {
 }
 
 #header_navigation {
-  float: left;
-/*  width: 980px; */
-  width: 100%;
-/*  position: relative; */
-  left: 105px;
-  margin-top: 15px;
+  width: 85%;
+	position: relative; 
+  margin: 10px auto;
+	clear: left;
+	height: 40px;
 }
 
 #header_sponsors {
@@ -196,13 +188,13 @@ a {
 
 #header_nav_top {
 	float: left;
-	margin: 15px;
+	margin: 7px 15px;
 }
 
 .nav_top_point a {
   float: left;
-  color: #8E8E8E;
-  font-size: 18px;
+  color: #afafaf;
+  font-size: 16px;
   font-family:"Ubuntu";
   text-transform:lowercase;
 }
@@ -241,7 +233,7 @@ width:45px;
 
 .navi_point a {
   color: #8E8E8E;
-  font-size: 22px;
+  font-size: 20px;
   font-family:"Ubuntu";
   display:block;
 }
@@ -252,13 +244,8 @@ width:45px;
 }
 
 #content {
-/*  float: left; */
-/*  position: relative; */
-/*  width: 950px; */
   left: 50%;
-/*  margin-left: -475px; */
-/*  padding-bottom:180px; */
-  padding-top: 15px;
+/*  padding-top: 15px; */
   margin: 30px auto;
   max-width: 1000px;
   min-width: 760px;
@@ -270,7 +257,7 @@ width:45px;
   position: relative;
   width: 99%;
   padding-bottom: 30px; 
-  padding-top: 15px;
+/*  padding-top: 15px; */
   display: block;
   margin: 2px auto;
   max-width: 1200px;
@@ -717,9 +704,9 @@ padding-right:18px;
   font-size: 12px;
   color: #7D7D7D;
   padding-top: 7px;
-  width: 90px;
   float: right;
   font-family:Tahoma, Geneva, sans-serif;
+	margin-left: 5px;
 }
 
 .headline {
