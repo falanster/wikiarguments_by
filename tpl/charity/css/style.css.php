@@ -293,7 +293,7 @@ width:45px;
   background: #3275B7;
   height: 138px;
   width: 100%;
-	min-width: 760%;
+	min-width: 760px;
   background-repeat: repeat-x;
   clear:both;
 
@@ -2187,7 +2187,7 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/selected_p
 }
 
 .question_tabs a{
-font-family:"Imprima", serif;
+font-family:"Ubuntu";
 }
 
 #footer_socials{
