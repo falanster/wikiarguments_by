@@ -102,6 +102,7 @@ a {
   -o-box-shadow: 3px 0 6px 3px #DDDDDD;
   position: relative; */
   height: 100px;
+	min-width: 760px;
   margin:0 auto;
 }
 
@@ -128,7 +129,7 @@ a {
   display:block;
   float: left;
   height: 60px; 
-	width: 100%;
+	width: 101%;
 	background: #004A80;
 }
 
@@ -292,6 +293,7 @@ width:45px;
   background: #3275B7;
   height: 138px;
   width: 100%;
+	min-width: 760%;
   background-repeat: repeat-x;
   clear:both;
 
@@ -443,7 +445,7 @@ color:#87cbff;
   right: 8px;
   text-align: center;
   margin-top: 5px;
-  font-family:"Ubuntu", serif;
+  font-family:"Ubuntu";
 }
 
 .stats.question_stats .question_points_text{
@@ -452,6 +454,7 @@ color:#87cbff;
 
 .question_tabs .tab_active a{
   color: #222222;
+	font-family:"Ubuntu";
 }
 
 
@@ -870,7 +873,8 @@ color:#333;
   vertical-align: middle;
   height: 46px;
 	float: left;
-	width: 80px;
+	width: 70px;
+	font-family: "Ubuntu";
 }
 
 
@@ -907,7 +911,7 @@ color:#333;
   color: #000000;
   font-size: 22px;
   margin-top: -2px;
-  margin-right: 20px;
+/*  margin-right: 20px; */
   font-family:"Ubuntu";
   width: 100px;
   text-align: center;
