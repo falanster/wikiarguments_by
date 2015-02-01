@@ -1531,6 +1531,26 @@ clear:both;}
   height: 250px;
 }
 
+.header_button_orange{
+	min-width:125px;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Imprima', sans-serif;
+	letter-spacing: -0.5px;
+	font-size:16px;
+	padding:7px 14px;
+
+	border:1px solid #e6500b;
+	color:#e6500b;
+	
+	width: auto;
+	
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+}
+
 .button_orange {
 min-width:125px;
 display:inline-block;
