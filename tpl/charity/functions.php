@@ -474,8 +474,8 @@ function drawQuestionDistribution(Question $q)
   <div class = 'pro_perc'>".$sTemplate->getString("QUESTION_DISTRIBUTION_PRO_PERC", Array("[PERC]"), Array(ceil($q->percPro() * 100)))."</div>
   <div class='question_vote_count'>".$sTemplate->getStringNumber("QUESTION_DISTRIBUTION_NUM_CHECKINS", Array("[NUM]"), Array($numCheckins), $numCheckins)."<div class='arrow'></div></div>
   <div class = 'distribution'>
-    <div class = 'distribution_pro' style = 'width: ".ceil($q->percPro() * 372)."px'></div>
-    <div class = 'distribution_con ' style = 'width: ".(372 - ceil($q->percPro() * 372))."px; border-radius:".computeBorderRadius(372 - ceil($q->percPro() * 372))."'></div>
+    <div class = 'distribution_pro' style = 'width: ".ceil($q->percPro() * 100)."%'></div>
+    <div class = 'distribution_con ' style = 'width: ".(100 - ceil($q->percPro() * 100))."%; border-radius:".computeBorderRadius(372 - ceil($q->percPro() * 372))."'></div>
   </div>";
 
     if($faction == FACTION_NONE || $faction == FACTION_PRO)
