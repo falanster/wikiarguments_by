@@ -1532,16 +1532,19 @@ clear:both;}
 }
 
 .header_button_orange{
+	margin-top: 12px;
+	margin-left: 5%;
 	min-width:125px;
 	display:inline-block;
 	text-align:center;
 	font-family: 'Imprima', sans-serif;
-	letter-spacing: -0.5px;
+	letter-spacing: -0.2px;
 	font-size:16px;
 	padding:7px 14px;
+	background: #f6a015;
 
-	border:1px solid #e6500b;
-	color:#e6500b;
+/*	border:1px solid #e6500b; */
+	color:#004A80;
 	
 	width: auto;
 	
@@ -1556,7 +1559,7 @@ min-width:125px;
 display:inline-block;
 text-align:center;
 font-family: 'Imprima', sans-serif;
-letter-spacing: -0.5px;
+letter-spacing: -0.2px;
 font-size:16px;
 padding:7px 14px;
 background:#ee600d;
