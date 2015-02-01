@@ -32,20 +32,14 @@
  * thereof with code not governed by the terms of the CPAL.
  *******************************************************************************/
 
-global $sTemplate, $sUser, $sDB, $sPacket, $sPage;
-
-$page       = "";
-$language   = $sTemplate->getLangBase();
+include("./commonHeaders.php");
+header("Content-Type: text/css");
 ?>
-<?php include($sTemplate->getTemplateRootAbs()."header.php"); ?>
 
-<div id = "content_wide">
-  <div class = "thin">
+body {
+  background: ;
+}
 
-<div class = "headline">Пра нас</div>
-<?php echo $sTemplate->getString("ABOUT_US"); ?>
-
-	</div>
-</div>
-
-<?php include($sTemplate->getTemplateRootAbs()."footer.php"); ?>
+.question_title p a {
+  color: ;
+}

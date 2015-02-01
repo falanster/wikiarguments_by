@@ -91,6 +91,7 @@ if($sPage->group())
 
   <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/jquery-ui-1.7.2.custom.css.php" />
   <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/style.css.php" />
+  <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/commons.css.php" />
 
 
 
@@ -161,36 +162,28 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           </div>
           </form>
 	</div>
-</div>
-          
 
-        <div id = "header_navigation">
-          <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
-<!--
-	      <div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
+	<div id = "header_orange_button">
+		<?php if(!$sUser->isLoggedIn()) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("ERROR_NOT_LOGGED_IN") ?>'); return false;">
+		<button class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+	</a>
+	<?php }else if($sPage->group() && $sPage->group()->getPermission($sUser, ACTION_NEW_QUESTION) == PERMISSION_DISALLOWED) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("NOTICE_NEW_QUESTION_NO_PERMISSION") ?>'); return false;">
+		<button class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+	</a>
+	<?php }else if($sPage->group()) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>groups/<?php echo $sPage->group()->url(); ?>/new-question/'>
+		<div class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+	</a>
+	<?php }else { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'>
+		<div class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+	</a>
+	<?php } ?>
+	</div>
 
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTrending; ?>'><?php echo $sTemplate->getString("NAVIGATION_WHATS_HOT"); ?></a>
-          </div> 
--->
-
-          <div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
-          </div>
-
-          <div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
-          </div>
-
-          <div class = "navi_point">
-              <input type = "text" value = "<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>" id = "navi_search" name = "navi_search"
-                     onfocus = "if($('#navi_search').val() == '<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>') {$('#navi_search').val(''); }">
-          </div>
-          </form>
-        </div>
-      </div>
-
-      <div id = "header_menu_wrapper">
-<?php if($sUser->isLoggedIn()) { ?>
+	<?php if($sUser->isLoggedIn()) { ?>
         <div id = "header_menu" class = "header_menu">
           <div class = "username">
             <?php echo htmlspecialchars($sUser->getUserName()); ?>
@@ -216,6 +209,47 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
             <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNUP"); ?></a>
           </div>
 <?php } ?>
+ </div>         
+
+        <div id = "header_navigation">
+          <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
+<!--
+	      <div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
+
+            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTrending; ?>'><?php echo $sTemplate->getString("NAVIGATION_WHATS_HOT"); ?></a>
+          </div> 
+
+
+          <div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
+            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
+          </div>
+
+          <div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
+            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
+          </div>
+-->					
+					<div class = "navi_point about">
+            <a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a>
+          </div>
+					
+					<div class = "navi_point discuss">
+            <a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>Што абмяркоўваем?</a>
+          </div>
+					
+					<div class = "navi_point manual">
+            <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>Як карыстацца?</a>
+          </div>
+
+          <div class = "navi_point">
+              <input type = "text" value = "<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>" id = "navi_search" name = "navi_search"
+                     onfocus = "if($('#navi_search').val() == '<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>') {$('#navi_search').val(''); }">
+          </div>
+          </form>
+        </div>
+      </div>
+
+      <div id = "header_menu_wrapper">
+
       </div>
 
     </div>

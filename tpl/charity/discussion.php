@@ -42,8 +42,9 @@ $language   = $sTemplate->getLangBase();
 <div id = "content_wide">
   <div class = "thin">
 
-<div class = "headline">Пра нас</div>
-<?php echo $sTemplate->getString("ABOUT_US"); ?>
+		<div class = "headline">Што абмяркоўваем?</div>
+
+
 
 	</div>
 </div>
