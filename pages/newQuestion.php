@@ -105,7 +105,16 @@ class PageNewQuestion extends Page
         }
 
 
-        $questionParsed = preg_replace("/[^\w\W\[\]\{\} -]/iu", "", $question);
+        $questionParsed = preg_replace("/[^\w\W\[\]\{\} -]/i", "", $question);
+//        $question = str_replace("?", "", $question);
+
+//echo "!<br>$question<br>!-----------------<br>";
+//exit;
+
+
+//echo $question;
+
+//exit;
 
         if($question == "" || $questionParsed == "")
         {
@@ -129,6 +138,18 @@ class PageNewQuestion extends Page
         global $sDB, $sUser, $sTemplate;
 
         $url = url_sanitize($questionParsed);
+
+
+//echo "!<br>$question<br>!-----------------<br>";
+
+        $questionParsed = preg_replace("/[^\w\W\[\]\{\} -]/i", "", $question);
+
+//echo "!<br>$question<br>!";
+
+//  $question = str_replace("?", "", $question);
+
+//var_dump($url);
+//exit;
 
         $i = 0;
         while(true)
@@ -154,6 +175,11 @@ class PageNewQuestion extends Page
         $additionalData->percCon     = 0;
         $additionalData->numCheckIns = 0;
         $additionalData->tags        = array_unique($tagsNoQuestion);
+
+
+//echo $url;
+//echo $question;
+//exit;
 
         $sDB->exec("INSERT INTO `questions` (`questionId`, `title`, `url`, `details`, `dateAdded`, `userId`, `score`, `scoreTrending`, `scoreTop`, `additionalData`, `groupId`, `type`, `flags`) VALUES
                                             (NULL, '".mysql_real_escape_string($question)."', '".mysql_real_escape_string($url)."', '".mysql_real_escape_string($details)."',
