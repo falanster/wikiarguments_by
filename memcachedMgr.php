@@ -54,7 +54,7 @@ class MemcachedMgr
     */
     public function init()
     {
-        $this->link_session = new Memcache();
+     /*   $this->link_session = new Memcache();
         $this->link_data    = new Memcache();
 
         foreach(getMemcachedHosts() as $key => $val)
@@ -66,7 +66,7 @@ class MemcachedMgr
             {
                 $this->link_data->addServer($val[1], $val[2]);
             }
-	}
+	}*/
 	$this->link_session = $this->link_data = -1;
         //}
     }
