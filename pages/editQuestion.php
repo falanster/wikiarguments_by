@@ -114,8 +114,9 @@ class PageEditQuestion extends Page
             return false;
         }
 
-        $question       = substr($sRequest->getStringPlain("new_question_title"), 0, MAX_QUESTION_CHR_LENGTH);
-        $tagsRaw        = substr($sRequest->getStringPlain("new_question_tags"), 0, MAX_TAGS_CHR_LENGTH);
+	mb_internal_encoding("UTF-8");
+        $question       = mb_substr($sRequest->getStringPlain("new_question_title"), 0, MAX_QUESTION_CHR_LENGTH);
+        $tagsRaw        = mb_substr($sRequest->getStringPlain("new_question_tags"), 0, MAX_TAGS_CHR_LENGTH);
         $details        = $sRequest->getStringPlain("new_question_details");
         $type           = $sRequest->getInt("new_question_type");
         $flags          = $sRequest->getInt("new_question_flags");
