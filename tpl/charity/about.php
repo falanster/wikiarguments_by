@@ -39,11 +39,13 @@ $language   = $sTemplate->getLangBase();
 ?>
 <?php include($sTemplate->getTemplateRootAbs()."header.php"); ?>
 
-<div id = "content">
+<div id = "content_wide">
+  <div class = "thin">
 
+<div class = "headline">Пра нас</div>
 <?php echo $sTemplate->getString("ABOUT_US"); ?>
 
-
+	</div>
 </div>
 
 <?php include($sTemplate->getTemplateRootAbs()."footer.php"); ?>

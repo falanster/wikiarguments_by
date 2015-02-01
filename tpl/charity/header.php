@@ -231,6 +231,10 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 					<div class = "navi_point about">
             <a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a>
           </div>
+					
+					<div class = "navi_point manual">
+            <a href = '<?php echo $sTemplate->getRoot(); ?>usagemanual/'>Як карыстацца?</a>
+          </div>
 
           <div class = "navi_point">
               <input type = "text" value = "<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>" id = "navi_search" name = "navi_search"
