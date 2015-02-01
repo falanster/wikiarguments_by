@@ -199,7 +199,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTrending; ?>'><?php echo $sTemplate->getString("NAVIGATION_WHATS_HOT"); ?></a>
           </div> 
--->
+
 
           <div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
@@ -208,7 +208,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           <div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
           </div>
-					
+-->					
 					<div class = "navi_point about">
             <a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a>
           </div>

@@ -1378,8 +1378,7 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
 }
 
 .profile {
-  width: 600px;
-  margin-left: 175px;
+
 }
 
 .manage_group {
