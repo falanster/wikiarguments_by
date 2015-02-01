@@ -232,8 +232,12 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
             <a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a>
           </div>
 					
+					<div class = "navi_point discuss">
+            <a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>Што абмяркоўваем?</a>
+          </div>
+					
 					<div class = "navi_point manual">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>usagemanual/'>Як карыстацца?</a>
+            <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>Як карыстацца?</a>
           </div>
 
           <div class = "navi_point">
