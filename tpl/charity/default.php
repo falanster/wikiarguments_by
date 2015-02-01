@@ -62,6 +62,8 @@ if(count($sPage->getTags()) > 0)
 
 <?php foreach($sPage->getQuestions() as $k => $v)
 {
+var_dump($v);
+
     drawQuestionBox($v);
 }
 ?>
