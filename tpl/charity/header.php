@@ -210,7 +210,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           </div>
 					
 					<div class = "navi_point about">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("ABOUT_US"); ?></a>
+            <a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a>
           </div>
 
           <div class = "navi_point">
