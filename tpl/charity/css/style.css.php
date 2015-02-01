@@ -964,7 +964,7 @@ color:#333;
 .distribution_con {
   position: absolute;
   top: -1px;
-  right: -2px;
+  right: 0;
   height: 32px;
 
   background: #ff5d00;
