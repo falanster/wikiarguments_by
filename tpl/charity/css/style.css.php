@@ -1540,12 +1540,12 @@ letter-spacing: -0.5px;
 font-size:16px;
 padding:7px 14px;
 background:#ee600d;
-border-top :1px solid #edb14a;
+/*border-top :1px solid #edb14a;
 border-bottom :1px solid #9c4822;
 border-left: 1px solid #da9650;
-border-right:1px solid #af5b0c;
+border-right:1px solid #af5b0c; */
 color:#FFF;
- text-shadow: 0 -1px #B64F1B;
+/* text-shadow: 0 -1px #B64F1B; */
 background: #f6a015; /* Old browsers */
 background: -moz-linear-gradient(top,  #f6a015 0%, #f17b10 60%, #e6500b 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6a015), color-stop(60%,#f17b10), color-stop(100%,#e6500b)); /* Chrome,Safari4+ */
@@ -1558,10 +1558,10 @@ border-radius:5px;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
 -o-border-radius:5px;
-box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
+/*box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
 -moz-box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
 -webkit-box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
--o-box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999;
+-o-box-shadow: 1px 1px #fce0af inset,0px 0px 3px #999; */
 
 width: auto;
 
