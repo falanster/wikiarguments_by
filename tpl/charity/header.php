@@ -208,6 +208,10 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           <div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
           </div>
+					
+					<div class = "navi_point about">
+            <a href = '<?php echo $sTemplate->getString("ABOUT_US"); ?>'>Пра нас</a>
+          </div>
 
           <div class = "navi_point">
               <input type = "text" value = "<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>" id = "navi_search" name = "navi_search"
