@@ -2,6 +2,8 @@ AddDefaultCharset UTF-8
 Allow from all
 RewriteEngine on
 
+RewriteRule ^(phpmyadmin)($|/) - [L]
+
 RewriteRule ^imprint/$                                                          index.php?pageTitle=imprint [L]
 RewriteRule ^about/$                                                            index.php?pageTitle=about [L]
 RewriteRule ^usage-manual/$                                                     index.php?pageTitle=usage_manual [L]
