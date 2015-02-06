@@ -31,6 +31,7 @@
  * defined in the CPAL as a work which combines Covered Code or portions
  * thereof with code not governed by the terms of the CPAL.
  *******************************************************************************/
+error_reporting(E_ALL);
 
 include("commonHeaders.php");
 

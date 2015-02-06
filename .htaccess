@@ -1,5 +1,8 @@
+AddDefaultCharset UTF-8
 Allow from all
 RewriteEngine on
+
+RewriteRule ^(phpmyadmin)($|/) - [L]
 
 RewriteRule ^imprint/$                                                          index.php?pageTitle=imprint [L]
 RewriteRule ^about/$                                                            index.php?pageTitle=about [L]
@@ -53,7 +56,7 @@ RewriteRule ^manage-profile/$                                                   
 RewriteRule ^user/([0-9]+)/$                                                    index.php?pageTitle=profile&userId=$1 [L]
 RewriteRule ^logout/$                                                           index.php?pageTitle=logout [L]
 
-RewriteRule ^([^/\.]+)/$                                                        index.php?pageTitle=question&title=$1&view=0 [L]
+RewriteRule ^([^/\.]+)/$                                                       index.php?pageTitle=question&title=$1&view=0 [L]
 RewriteRule ^([^/\.]+)/details/$                                                index.php?pageTitle=question&title=$1&view=1 [L]
 RewriteRule ^groups/([^/\.]+)/([^/\.]+)/$                                       index.php?pageTitle=question&group=$1&title=$2&view=0 [L]
 RewriteRule ^groups/([^/\.]+)/([^/\.]+)/details/$                               index.php?pageTitle=question&group=$1&title=$2&view=1 [L]

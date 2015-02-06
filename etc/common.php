@@ -462,7 +462,14 @@ function url_sanitize($url)
 {
     mb_internal_encoding("UTF-8");
     $url = str_replace(" ", "-", mb_strtolower($url));
-
+    $url = escape($url);
     return $url;
+}
+
+function escape($str)
+{
+   $search=array("\\","\0","\n","\r","\x1a","'",'"', "?");
+   $replace=array("","","","","","","","");
+   return str_replace($search,$replace,$str);
 }
 ?>

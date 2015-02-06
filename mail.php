@@ -72,7 +72,7 @@ class HTMLMail {
         // Now we split by \r\n - i'm not sure about how many chars (header name counts or not?)
         $string = chunk_split($string, 73);
         // We also have to remove last unneeded \r\n :
-        $string = substr($string, 0, strlen($string)-2);
+        $string = mb_substr($string, 0, strlen($string)-2);
         // replace newlines with encoding text "=?UTF ..."
         $string = str_replace("\r\n", "?=".HEAD_CRLF." =?".$encoding."?Q?", $string) ;
 

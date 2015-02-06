@@ -224,7 +224,7 @@ class DebugTiming
                     }break;
                     case 'string':
                     {
-                        $a = substr($a, 0, 64).((strlen($a) > 64) ? '...' : '');
+                        $a = mb_substr($a, 0, 64).((strlen($a) > 64) ? '...' : '');
                         $args .= "\"$a\"";
                     }break;
                     case 'array':

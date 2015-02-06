@@ -90,8 +90,13 @@ class PageNewQuestion extends Page
             return false;
         }
 
-        $question       = substr($sRequest->getStringPlain("new_question_title"), 0, MAX_QUESTION_CHR_LENGTH);
-        $tagsRaw        = substr($sRequest->getStringPlain("new_question_tags"), 0, MAX_TAGS_CHR_LENGTH);
+
+//echo $sRequest->getStringPlain("new_question_title")."<br>";
+//echo MAX_QUESTION_CHR_LENGTH;
+            
+   	mb_internal_encoding("UTF-8");
+        $question       = mb_substr($sRequest->getStringPlain("new_question_title"), 0, MAX_QUESTION_CHR_LENGTH);
+        $tagsRaw        = mb_substr($sRequest->getStringPlain("new_question_tags"), 0, MAX_TAGS_CHR_LENGTH);
         $details        = $sRequest->getStringPlain("new_question_details");
         $type           = $sRequest->getInt("new_question_type");
         $flags          = $sRequest->getInt("new_question_flags");
@@ -105,7 +110,16 @@ class PageNewQuestion extends Page
         }
 
 
-        $questionParsed = preg_replace("/[^\w\W\[\]\{\} -]/iu", "", $question);
+        $questionParsed = preg_replace("/[^\w\W\[\]\{\} -]/i", "", $question);
+//        $question = str_replace("?", "", $question);
+
+//echo "!<br>$question<br>!-----------------<br>";
+//exit;
+
+
+//echo $question;
+
+//exit;
 
         if($question == "" || $questionParsed == "")
         {
@@ -126,9 +140,25 @@ class PageNewQuestion extends Page
 
     private function store($question, $questionParsed, $tags, $details, $tagsNoQuestion, $type, $flags)
     {
+
+
+//echo $question."<br>";
+
         global $sDB, $sUser, $sTemplate;
 
         $url = url_sanitize($questionParsed);
+
+
+//echo "!<br>$question<br>!-----------------<br>";
+
+        $questionParsed = preg_replace("/[^\w\W\[\]\{\} -]/i", "", $question);
+
+//echo "!<br>$question<br>!";
+
+//  $question = str_replace("?", "", $question);
+
+//var_dump($url);
+//exit;
 
         $i = 0;
         while(true)
@@ -154,6 +184,11 @@ class PageNewQuestion extends Page
         $additionalData->percCon     = 0;
         $additionalData->numCheckIns = 0;
         $additionalData->tags        = array_unique($tagsNoQuestion);
+
+
+//echo $url;
+//echo $question;
+//exit;
 
         $sDB->exec("INSERT INTO `questions` (`questionId`, `title`, `url`, `details`, `dateAdded`, `userId`, `score`, `scoreTrending`, `scoreTop`, `additionalData`, `groupId`, `type`, `flags`) VALUES
                                             (NULL, '".mysql_real_escape_string($question)."', '".mysql_real_escape_string($url)."', '".mysql_real_escape_string($details)."',
