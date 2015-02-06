@@ -229,15 +229,15 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           </div>
 -->					
 					<div class = "navi_point about">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a>
+            <a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></a>
           </div>
 					
 					<div class = "navi_point discuss">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>Што абмяркоўваем?</a>
+            <a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></a>
           </div>
 					
 					<div class = "navi_point manual">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>Як карыстацца?</a>
+            <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'><?php echo $sTemplate->getString("HTML_META_TITLE_USAGE_MANUAL"); ?></a>
           </div>
 
           <div class = "navi_point">

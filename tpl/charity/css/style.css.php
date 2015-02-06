@@ -1033,10 +1033,12 @@ color:#333;
 
 .argument_pro {
   width: 100%;
+	float: left;
 }
 
 .argument_con {
   width: 100%;
+	float: left;
 }
 
 .argument_pro_no_counter {

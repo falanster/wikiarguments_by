@@ -32,21 +32,18 @@
  * thereof with code not governed by the terms of the CPAL.
  *******************************************************************************/
 
-global $sTemplate, $sUser, $sDB, $sPacket, $sPage;
+class PageAbout extends Page
+{
+    public function PageLicense($row)
+    {
+        global $sDB, $sRequest, $sStatistics, $sUser;
+        parent::Page($row);
+    }
 
-$page       = "";
-$language   = $sTemplate->getLangBase();
+    public function title()
+    {
+        global $sTemplate;
+        return $sTemplate->getString("HTML_META_TITLE_LICENSE");
+    }
+};
 ?>
-<?php include($sTemplate->getTemplateRootAbs()."header.php"); ?>
-
-<div id = "content_wide">
-  <div class = "thin">
-
-		<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></div>
-
-
-
-	</div>
-</div>
-
-<?php include($sTemplate->getTemplateRootAbs()."footer.php"); ?>

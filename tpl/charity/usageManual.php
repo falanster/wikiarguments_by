@@ -42,7 +42,7 @@ $language   = $sTemplate->getLangBase();
 <div id = "content_wide">
   <div class = "thin">
 
-		<div class = "headline">Як карыстацца сістэмай</div>
+		<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_USAGE_MANUAL"); ?></div>
 
 		<?php echo $sTemplate->getString("USAGE_MANUAL"); ?>
 

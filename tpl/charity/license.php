@@ -42,7 +42,7 @@ $language   = $sTemplate->getLangBase();
 <div id = "content_wide">
   <div class = "thin">
 
-		<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></div>
+		<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_LICENSE"); ?></div>
 
 
 
