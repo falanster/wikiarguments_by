@@ -1743,11 +1743,13 @@ cursor: pointer;
   height: 20px;
   margin-top: 15px;
   margin-right: -20px;
-  color: #87cbff;
+  position: relative; 
+
   font-size: 16px;
   font-family:"Ubuntu";
-	position: relative; 
+  text-align: right;
 
+  color: #87cbff;
 }
 
 .header_signup a {
