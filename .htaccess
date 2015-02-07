@@ -8,8 +8,8 @@ RewriteRule ^imprint/$                                                          
 RewriteRule ^about/$                                                            index.php?pageTitle=about [L]
 RewriteRule ^usage-manual/$                                                     index.php?pageTitle=usage_manual [L]
 RewriteRule ^faq/$                                                              index.php?pageTitle=faq [L]
-RewriteRule ^discussion/$                                                              index.php?pageTitle=discussion [L]
-RewriteRule ^license/$                                                              index.php?pageTitle=license [L]
+RewriteRule ^discussion/$                                                       index.php?pageTitle=discussion [L]
+RewriteRule ^license/$                                                          index.php?pageTitle=license [L]
 
 RewriteRule ^([0-9]+)/$                                                         index.php?pageTitle=default&page=$1&sort=0 [L]
 

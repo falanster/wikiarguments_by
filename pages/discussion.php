@@ -32,7 +32,7 @@
  * thereof with code not governed by the terms of the CPAL.
  *******************************************************************************/
 
-class PageAbout extends Page
+class PageDiscussion extends Page
 {
     public function PageDiscussion($row)
     {
