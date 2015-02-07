@@ -315,11 +315,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
 }
 
 #footer_logo {
-  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_logo.png');
-  height: 18px;
-  width: 226px;
+  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/ant_site_logo_mini_footer.png');
+  height: 29px;
+  width: 300px;
   position: relative;
-  top: 42px;
+  top: 70px;
+	margin: 0 auto;
 }
 
 #footer_copyright {
@@ -332,16 +333,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
 }
 
 #footer_menu {
-  position: absolute;
   font-family: Tahoma, Geneva, sans-serif;
   top: 98px;
   color: #87cbff;
   font-size: 13px;
-  width:65%;
+  width: 430px;
+	margin: 0 auto;
 }
 
 #footer_submenu {
-  position: absolute;
   font-family: Tahoma, Geneva, sans-serif;
   top: 118px;
   color: #87cbff;
@@ -371,7 +371,6 @@ color:#87cbff;
 
 
 .filter {
-  width: 910px;
   border: 1px solid #C7A900;
   border-radius: 20px;
   -moz-border-radius: 20px;
