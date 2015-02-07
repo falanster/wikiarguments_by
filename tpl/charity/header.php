@@ -237,7 +237,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
           </div>
           
        
-     
+				</div>
 
       <div id = "header_menu_wrapper">
 
