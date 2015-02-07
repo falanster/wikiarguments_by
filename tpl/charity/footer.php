@@ -63,19 +63,20 @@ wikiargument.raiseNotice("<?php echo $notice; ?>");
 <?php } ?>
 </div>
   <div id = "footer">
-    <div id = "footer_content">
+    <div id = "footer_content"  style = "display: none;">
         <a href = '<?php echo $sTemplate->getRoot(); ?>'><div id = "footer_logo"></div></a>
         <div id = "footer_copyright">
           <?php echo $sTemplate->getString("FOOTER_COPYRIGHT"); ?> |
           <a href = '#' onclick = "$('#footer_menu').show(); return false;"><?php echo $sTemplate->getString("FOOTER_MENU"); ?></a> |
-          <a href = 'http://www.wikiarguments.net'>Powered by Wikiarguments</a>
-        </div>
-        <div id = "footer_menu" style = "display: none;">
-          <?php echo $sTemplate->getString("FOOTER_OPEN_SOURCE"); ?> |
-          <?php echo $sTemplate->getString("CHANGELOG_URL"); ?><?php echo $sTemplate->getString("FOOTER_CHANGELOG"); ?></a> |
-          <a href = '<?php echo $sTemplate->getRoot(); ?>new-group/'><?php echo $sTemplate->getString("FOOTER_NEW_GROUP"); ?></a> |
-          <?php echo $sTemplate->getString("FOOTER_TOS"); ?> |
+          <a href = 'http://www.wikiarguments.net'>Powered by Wikiarguments</a>|
           <a href = '#' onclick = "$('#footer_submenu').show(); return false;"><?php echo $sTemplate->getString("LANGUAGE"); ?></a> 
+        </div>
+        <div id = "footer_menu">
+          <a href = '<?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT_LINK"); ?>'><?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT"); ?></a> |
+          <a href = '<?php echo $sTemplate->getString("FOOTER_CONTACT_LINK"); ?>'><?php echo $sTemplate->getString("FOOTER_CONTACT"); ?></a> |
+          <a href = '<?php echo $sTemplate->getRoot(); ?>license/'><?php echo $sTemplate->getString("FOOTER_LICENSE"); ?></a> |
+          <a href = 'https://github.com/falanster/wikiarguments_by'>Github</a> |
+					<a href = 'http://www.wikiarguments.net'>Powered by Wikiarguments</a>
         </div>
         <div id = "footer_submenu" style = "display: none;">
           <?php echo $sTemplate->getString("GERMAN_URL"); ?><?php echo $sTemplate->getString("GERMAN"); ?></a> |

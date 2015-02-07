@@ -315,7 +315,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
 }
 
 #footer_logo {
-  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_logo.png');
+  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/ant_site_logo_mini_footer.png');
   height: 18px;
   width: 226px;
   position: relative;
@@ -341,7 +341,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
 }
 
 #footer_submenu {
-  position: absolute;
   font-family: Tahoma, Geneva, sans-serif;
   top: 118px;
   color: #87cbff;
