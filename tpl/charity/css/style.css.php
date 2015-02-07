@@ -319,7 +319,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
   height: 29px;
   width: 300px;
   position: relative;
-  top: 42px;
+  top: 70px;
+	margin: 0 auto;
 }
 
 #footer_copyright {
@@ -332,12 +333,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
 }
 
 #footer_menu {
-  position: absolute;
   font-family: Tahoma, Geneva, sans-serif;
   top: 98px;
   color: #87cbff;
   font-size: 13px;
-  width:65%;
+  width: 430px;
+	margin: 0 auto;
 }
 
 #footer_submenu {
