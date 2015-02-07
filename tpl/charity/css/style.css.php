@@ -371,7 +371,6 @@ color:#87cbff;
 
 
 .filter {
-  width: 910px;
   border: 1px solid #C7A900;
   border-radius: 20px;
   -moz-border-radius: 20px;
