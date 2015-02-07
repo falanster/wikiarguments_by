@@ -125,6 +125,11 @@ a {
 	margin: 0 auto;
 }
 
+#header_white {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
 #header_content {
   display:block;
   float: left;
@@ -227,13 +232,11 @@ width:100px;}
 
 .navi_point.neu{
 	float: left;
-width:45px;
+	width:45px;
 }
 
 .navi_point:last-child{
-  float: right;
-  margin-right: 0px;
-  padding-right: 0px;
+
 }
 
 .navi_point a {

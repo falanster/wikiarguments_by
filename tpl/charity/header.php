@@ -205,8 +205,9 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
             <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNIN"); ?></a>
           </div>
 <?php } ?>
- </div>         
+			</div>          <!-- header_white ends-->
 
+			<div id= "header_white2">
         <div id = "header_navigation">
           <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
 <!--
@@ -236,8 +237,8 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
                      onfocus = "if($('#navi_search').val() == '<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>') {$('#navi_search').val(''); }">
           </div>
           
-       
-				</div>
+      </div> <!-- header_white2 end -->
+			</div> <!-- header_content end -->
 
       <div id = "header_menu_wrapper">
 
