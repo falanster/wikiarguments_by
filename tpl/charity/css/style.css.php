@@ -128,6 +128,8 @@ a {
 #header_white2 {
 	background: #fff;
 	border-bottom: 1px solid #ddd;
+	width: 100%;
+	height: 27px;
 }
 
 #header_content {
@@ -179,7 +181,7 @@ a {
 	float: left;
   width: 20%;
 	position: relative; 
-  margin: 10px auto;
+  margin: 0 0 0 10%;
 	clear: left;
 	height: 40px;
 }
@@ -218,13 +220,7 @@ a {
 }
 
 .navi_point {
-   float:left;
-  margin-left: 30px;
-/*  margin-right: 49px; */
-/*  padding-left:20px; */
-/*  padding-right: 0px; */
-/*  position: relative; */
-  min-width:80px;
+  float:left;
 }
 
 .navi_point.trend{
@@ -251,6 +247,10 @@ width:100px;}
 .navi_point a:hover {
   color: #3275b6;
 
+}
+
+navi_point_search {
+	float: right;
 }
 
 #content {
