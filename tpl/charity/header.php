@@ -206,7 +206,8 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
         </div>
 <?php }else{ ?>
           <div class = "header_signup">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNUP"); ?></a>
+            <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNUP"); ?></a><br />
+            <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNIN"); ?></a>
           </div>
 <?php } ?>
  </div>         
