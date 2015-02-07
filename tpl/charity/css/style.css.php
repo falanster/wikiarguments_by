@@ -171,11 +171,15 @@ a {
 }
 
 #header_navigation {
-  width: 85%;
+  width: 20%;
 	position: relative; 
   margin: 10px auto;
 	clear: left;
 	height: 40px;
+}
+
+#header_navigation2 {
+	float: left;
 }
 
 #header_sponsors {
@@ -209,7 +213,6 @@ a {
 
 .navi_point {
    float:left;
-  height: 61px;
   margin-left: 30px;
 /*  margin-right: 49px; */
 /*  padding-left:20px; */
@@ -238,6 +241,7 @@ width:45px;
   font-size: 20px;
   font-family:"Ubuntu";
   display:block;
+	float: left;
 }
 
 .navi_point a:hover {
@@ -402,6 +406,12 @@ color:#87cbff;
 
 .filter .remove span {
   float: left;
+}
+
+.small_button_text {
+	margin: -2px 0 -7px;
+	float: right;
+	font-size: 0.5em;
 }
 
 .remove_icon {
