@@ -125,7 +125,7 @@ a {
 	margin: 0 auto;
 }
 
-#header_white {
+#header_white2 {
 	background: #fff;
 	border-bottom: 1px solid #ddd;
 }
@@ -176,6 +176,7 @@ a {
 }
 
 #header_navigation {
+	float: left;
   width: 20%;
 	position: relative; 
   margin: 10px auto;
