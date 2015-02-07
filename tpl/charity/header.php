@@ -151,17 +151,6 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 
 ?> 
 
-	<div id = "header_nav_top">
-          <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
-          <div class = "nav_top_point top <?php echo $topActive ? "current_page" : "";?>">
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
-          </div>
-
-          <div class = "nav_top_point neu <?php echo $newestActive ? "current_page" : "";?>">
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
-          </div>
-          </form>
-	</div>
 
 	<div id = "header_orange_button">
 		<?php if(!$sUser->isLoggedIn()) { ?>
@@ -181,6 +170,12 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 		<div class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
 	</a>
 	<?php } ?>
+	</div>
+	
+	<div id = "header_orange_button">
+		<a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>
+			<button class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?><p class="small_button_text">01.01.2015</p></button>
+		</a>
 	</div>
 
 	<?php if($sUser->isLoggedIn()) { ?>
@@ -210,44 +205,48 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
             <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'><?php echo $sTemplate->getString("HEADER_SIGNIN"); ?></a>
           </div>
 <?php } ?>
- </div>         
+			</div>          <!-- header_white ends-->
 
+			<div id= "header_white2">
         <div id = "header_navigation">
-          <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
+          
 <!--
 	      <div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
 
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTrending; ?>'><?php echo $sTemplate->getString("NAVIGATION_WHATS_HOT"); ?></a>
           </div> 
-
+-->	
 
           <div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
           </div>
-
+					<div navi_point divider>|</div>
           <div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
           </div>
--->					
+		
+					
+				</div>
+				<div id = "header_navigation2">
+				
 					<div class = "navi_point about">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></a>
-          </div>
-					
-					<div class = "navi_point discuss">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></a>
-          </div>
-					
+						<a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></a>
+					</div> 
+					<div navi_point divider>|</div> 
 					<div class = "navi_point manual">
-            <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'><?php echo $sTemplate->getString("HTML_META_TITLE_USAGE_MANUAL"); ?></a>
-          </div>
+						<a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'><?php echo $sTemplate->getString("HTML_META_TITLE_USAGE_MANUAL"); ?></a>
+					</div>	
+        </div>
 
-          <div class = "navi_point">
+				<form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
+          <div class = "navi_point_search">
               <input type = "text" value = "<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>" id = "navi_search" name = "navi_search"
                      onfocus = "if($('#navi_search').val() == '<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>') {$('#navi_search').val(''); }">
           </div>
-          </form>
-        </div>
-      </div>
+				</form>	
+          
+      </div> <!-- header_white2 end -->
+			</div> <!-- header_content end -->
 
       <div id = "header_menu_wrapper">
 

@@ -125,6 +125,13 @@ a {
 	margin: 0 auto;
 }
 
+#header_white2 {
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	height: 27px;
+}
+
 #header_content {
   display:block;
   float: left;
@@ -171,11 +178,16 @@ a {
 }
 
 #header_navigation {
-  width: 85%;
+	float: left;
+  width: 20%;
 	position: relative; 
-  margin: 10px auto;
+  margin: 0 0 0 10%;
 	clear: left;
 	height: 40px;
+}
+
+#header_navigation2 {
+	float: left;
 }
 
 #header_sponsors {
@@ -208,14 +220,7 @@ a {
 }
 
 .navi_point {
-   float:left;
-  height: 61px;
-  margin-left: 30px;
-/*  margin-right: 49px; */
-/*  padding-left:20px; */
-/*  padding-right: 0px; */
-/*  position: relative; */
-  min-width:80px;
+  float:left;
 }
 
 .navi_point.trend{
@@ -224,13 +229,11 @@ width:100px;}
 
 .navi_point.neu{
 	float: left;
-width:45px;
+	width:45px;
 }
 
 .navi_point:last-child{
-  float: right;
-  margin-right: 0px;
-  padding-right: 0px;
+
 }
 
 .navi_point a {
@@ -238,11 +241,16 @@ width:45px;
   font-size: 20px;
   font-family:"Ubuntu";
   display:block;
+	float: left;
 }
 
 .navi_point a:hover {
   color: #3275b6;
 
+}
+
+navi_point_search {
+	float: right;
 }
 
 #content {
@@ -285,7 +293,7 @@ width:45px;
   letter-spacing: 0.3px;
   height:24px;
   font-size:16px;
-  margin-right: 20px;
+  margin-right: 10%;
   margin-top: 0px;
 }
 
@@ -402,6 +410,12 @@ color:#87cbff;
 
 .filter .remove span {
   float: left;
+}
+
+.small_button_text {
+	margin: -2px 0 -7px;
+	float: right;
+	font-size: 0.5em;
 }
 
 .remove_icon {
