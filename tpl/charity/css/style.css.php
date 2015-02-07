@@ -137,7 +137,7 @@ a {
   float: left;
   height: 60px; 
 	width: 101%;
-	background: #004A80;
+	background: #579bcc;
 }
 
 #header_logo {
@@ -221,6 +221,12 @@ a {
 
 .navi_point {
   float:left;
+}
+.divider{
+	margin: 0 5px;
+	color: #8E8E8E;
+	font-size: 19px;
+	font-family: "Ubuntu";
 }
 
 .navi_point.trend{
@@ -1548,6 +1554,7 @@ clear:both;}
 }
 
 .header_button_orange{
+	text-transform: lowercase;
 	margin-top: 12px;
 	margin-left: 5%;
 	min-width:125px;
@@ -1560,7 +1567,7 @@ clear:both;}
 	background: #f6a015;
 
 /*	border:1px solid #e6500b; */
-	color:#004A80;
+	color:#ffffff;
 	
 	width: auto;
 	
@@ -1571,6 +1578,7 @@ clear:both;}
 }
 
 .button_orange {
+text-transform: lowercase;
 min-width:125px;
 display:inline-block;
 text-align:center;
