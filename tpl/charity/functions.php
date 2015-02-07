@@ -55,9 +55,11 @@ function voteUp($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
         {
 
 var_dump($questionId);
+echo "<br>";
 echo $faction;
 echo "<br>";
 echo $argumentType;
+echo "<br>";
 
             $canVote  = false;
             $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";
