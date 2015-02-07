@@ -209,7 +209,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 
 			<div id= "header_white2">
         <div id = "header_navigation">
-          <form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
+          
 <!--
 	      <div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
 
@@ -225,9 +225,10 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
           </div>
 		
-					</form>
+					
 				</div>
 				<div id = "header_navigation2">
+				
 					<div class = "navi_point about">
 						<a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></a>
 					</div> | 
@@ -236,10 +237,12 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 					</div>	
         </div>
 
+				<form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
           <div class = "navi_point_search">
               <input type = "text" value = "<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>" id = "navi_search" name = "navi_search"
                      onfocus = "if($('#navi_search').val() == '<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>') {$('#navi_search').val(''); }">
           </div>
+				</form>	
           
       </div> <!-- header_white2 end -->
 			</div> <!-- header_content end -->
