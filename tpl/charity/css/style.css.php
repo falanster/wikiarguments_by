@@ -293,7 +293,7 @@ navi_point_search {
   letter-spacing: 0.3px;
   height:24px;
   font-size:16px;
-  margin-right: 20px;
+  margin-right: 10%;
   margin-top: 0px;
 }
 

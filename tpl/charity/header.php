@@ -219,8 +219,8 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 
           <div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
-          </div> | 
-
+          </div>
+					<div navi_point divider>|</div>
           <div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
             <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
           </div>
@@ -231,7 +231,8 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 				
 					<div class = "navi_point about">
 						<a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></a>
-					</div> | 
+					</div> 
+					<div navi_point divider>|</div> 
 					<div class = "navi_point manual">
 						<a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'><?php echo $sTemplate->getString("HTML_META_TITLE_USAGE_MANUAL"); ?></a>
 					</div>	
