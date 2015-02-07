@@ -63,9 +63,9 @@ wikiargument.raiseNotice("<?php echo $notice; ?>");
 <?php } ?>
 </div>
   <div id = "footer">
-    <div id = "footer_content"  style = "display: none;">
+    <div id = "footer_content">
         <a href = '<?php echo $sTemplate->getRoot(); ?>'><div id = "footer_logo"></div></a>
-        <div id = "footer_copyright">
+        <div id = "footer_copyright"  style = "display: none;">
           <?php echo $sTemplate->getString("FOOTER_COPYRIGHT"); ?> |
           <a href = '#' onclick = "$('#footer_menu').show(); return false;"><?php echo $sTemplate->getString("FOOTER_MENU"); ?></a> |
           <a href = 'http://www.wikiarguments.net'>Powered by Wikiarguments</a>|
@@ -74,7 +74,7 @@ wikiargument.raiseNotice("<?php echo $notice; ?>");
         <div id = "footer_menu">
           <a href = '<?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT_LINK"); ?>'><?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT"); ?></a> |
           <a href = '<?php echo $sTemplate->getString("FOOTER_CONTACT_LINK"); ?>'><?php echo $sTemplate->getString("FOOTER_CONTACT"); ?></a> |
-          <a href = '<?php echo $sTemplate->getRoot(); ?>license/'><?php echo $sTemplate->getString("FOOTER_LICENSE"); ?></a> |
+          <a href = '<?php echo $sTemplate->getRoot(); ?>license/'><?php echo $sTemplate->getString("HTML_META_TITLE_LICENSE"); ?></a> |
           <a href = 'https://github.com/falanster/wikiarguments_by'>Github</a> |
 					<a href = 'http://www.wikiarguments.net'>Powered by Wikiarguments</a>
         </div>

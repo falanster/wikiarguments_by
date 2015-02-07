@@ -316,8 +316,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
 
 #footer_logo {
   background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/ant_site_logo_mini_footer.png');
-  height: 18px;
-  width: 226px;
+  height: 29px;
+  width: 300px;
   position: relative;
   top: 42px;
 }
