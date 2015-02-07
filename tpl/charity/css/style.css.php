@@ -238,10 +238,11 @@ width:100px;}
 
 .navi_point a {
   color: #8E8E8E;
-  font-size: 20px;
+  font-size: 19px;
   font-family:"Ubuntu";
-  display:block;
+  display: block;
 	float: left;
+	text-transform: lowercase;
 }
 
 .navi_point a:hover {
