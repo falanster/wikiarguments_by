@@ -51,7 +51,7 @@ function voteUp($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
     {
         $faction = $sUser->getFactionByQuestionId($questionId);
 
-        if($faction != $argumentType)
+        if (0) //($faction != $argumentType)
         {
 
 var_dump($questionId);
