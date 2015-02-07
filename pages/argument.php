@@ -80,9 +80,9 @@ class PageArgument extends Page
                 $argumentId = $sRequest->getInt("argumentId");
                 $sStatistics->vote($this->question, $argumentId, $vote);
 
-                //header("Location: ".$this->argument->url($this->question->url())."#argument_wrapper_".$questionId."_".$argumentId);
-                header("Location: ".$this->argument->url($this->question->url()));
-                exit;
+                header("Location: ".$this->argument->url($this->question->url())."#argument_wrapper_".$questionId."_".$argumentId);
+//                header("Location: ".$this->argument->url($this->question->url()));
+//                exit;
             }
         }
 

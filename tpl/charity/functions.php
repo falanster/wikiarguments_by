@@ -53,6 +53,12 @@ function voteUp($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
 
         if($faction != $argumentType)
         {
+
+var_dump($questionId);
+echo $faction;
+echo "<br>";
+echo $argumentType;
+
             $canVote  = false;
             $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";
         }
@@ -541,7 +547,7 @@ function drawArgument(Question $q, Argument $a, $basePath, $abstract = true)
     $content .= '
   <div class = "argument '.($a->type() == ARGUMENT_PRO ? "argument_pro".$suffix : "argument_con".$suffix).'">
     <div class = "stats argument_stats">
-      <div class = "points argument_points">'.$numPoints.'</div>
+      <div class = "points argument_points">'.$numPoints.'__</div>
       <div class = "points_text argument_points_text">'.$sTemplate->getStringNumber("QUESTION_POINTS", Array(), Array(), $numPoints).'</div>
       '.voteUp('argument_vote_up', $a->questionId(), $a->argumentId(), $a->type(), $q->type(), $q->flags()).'
       '.voteDn('argument_vote_dn', $a->questionId(), $a->argumentId(), $a->type(), $q->type(), $q->flags()).'
