@@ -55,7 +55,7 @@ function voteUp($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
         {
 
 echo "Down:<br>";
-echo "questionId" "
+echo "questionId: ";
 var_dump($questionId);
 echo "<br>";
 echo "argumentType: ":$argumentType;
@@ -110,7 +110,7 @@ function voteDn($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
         {
 
 echo "Down:<br>";
-echo "questionId" "
+echo "questionId: ";
 var_dump($questionId);
 echo "<br>";
 echo "argumentType: ":$argumentType;
