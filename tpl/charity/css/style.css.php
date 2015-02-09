@@ -458,9 +458,9 @@ color:#87cbff;
 }
 
 .small_button_text {
-	margin: -4px 0 -7px;
+	margin: -5px 0 -7px;
 	float: right;
-	font-size: 0.5em;
+	font-size: 0.6em;
 }
 
 .big_button_text {
