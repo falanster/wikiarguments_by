@@ -101,7 +101,7 @@ a {
   -webkit-box-shadow: 3px 0 6px 3px #DDDDDD;
   -o-box-shadow: 3px 0 6px 3px #DDDDDD;
   position: relative; */
-  height: 100px;
+  height: 120px;
 	min-width: 760px;
   margin:0 auto;
 }
