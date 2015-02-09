@@ -1093,6 +1093,7 @@ color:#333;
   padding-bottom: 30px;
   overflow: hidden;
 	font-family: ubuntu;
+	margin-bottom: 10px;
 }
 
 .argument_pro {
@@ -1187,6 +1188,7 @@ font-size:16px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   background: #FFFFFF;
+	margin-top: -20px;
 }
 
 .counter_argument_box_pro {
@@ -1377,7 +1379,7 @@ left:0px;
   padding-top: 50px;
   color: #707070;
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: 25px;
   background: #FFF;
   border-radius: 15px 15px 10px 10px;
   -moz-border-radius: 15px 15px 10px 10px;
