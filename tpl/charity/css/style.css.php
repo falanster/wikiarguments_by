@@ -1092,6 +1092,7 @@ color:#333;
   position: relative;
   padding-bottom: 30px;
   overflow: hidden;
+	font-family: ubuntu;
 }
 
 .argument_pro {
