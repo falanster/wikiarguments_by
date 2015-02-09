@@ -51,15 +51,17 @@ function voteUp($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
     {
         $faction = $sUser->getFactionByQuestionId($questionId);
 
-        if (0) //($faction != $argumentType)
+        if ($faction != $argumentType)
         {
 
+echo "<br>Up:<br>";
+echo "questionId: ";
 var_dump($questionId);
 echo "<br>";
-echo $faction;
+echo "argumentType: ".$argumentType;
 echo "<br>";
-echo $argumentType;
-echo "<br>";
+echo "faction: ".$faction;
+echo "<br>---------------";
 
             $canVote  = false;
             $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";
@@ -103,8 +105,20 @@ function voteDn($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
     {
         $faction = $sUser->getFactionByQuestionId($questionId);
 
+
         if($faction != $argumentType)
         {
+
+echo "<br>Down:<br>";
+echo "questionId: ";
+var_dump($questionId);
+echo "<br>";
+echo "argumentType: ".$argumentType;
+echo "<br>";
+echo "faction: ".$faction;
+echo "<br>---------------";
+
+
             $canVote  = false;
             $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";
         }
