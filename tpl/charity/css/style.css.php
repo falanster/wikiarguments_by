@@ -331,7 +331,7 @@ navi_point_search {
   padding-left:5px;
   width: 200px;
   border: 1px solid #D2D2D2;
-  border-radius: 10px;
+/*  border-radius: 10px; */
   color: #898989;
   height: 19px;
   font-family: 'Imprima', sans-serif;
@@ -1620,6 +1620,7 @@ clear:both;}
 	border: none;
 /*	border:1px solid #e6500b; */
 	color:#ffffff;
+	cursor: pointer;
 	
 	width: auto;
 	
