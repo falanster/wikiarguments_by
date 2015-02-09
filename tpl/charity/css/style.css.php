@@ -116,7 +116,7 @@ a {
 //}
 
 #header_orange {
-	width: 100%;
+	width: 101%;
 	height: 25px;
 	background: #f4d2b6;
 }
