@@ -194,6 +194,7 @@ a {
 	width: 73%;
 	height: 29px;
 	float: left;
+	line-height: 1.5em;
 }
 
 #header_navigation {
@@ -335,8 +336,8 @@ navi_point_search {
   height: 19px;
   font-family: 'Imprima', sans-serif;
   letter-spacing: 0.3px;
-  height:24px;
-  font-size:16px;
+  height: 24px;
+  font-size: 15px;
   margin-right: 10%;
   margin-top: 0px;
 }
