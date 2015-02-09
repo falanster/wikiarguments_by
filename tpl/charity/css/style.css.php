@@ -73,8 +73,8 @@ html, body {
 }
 
 html {
-/*  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/background.png'); */
-	background: #f2f2f2;
+	background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/murashy.png'); 
+	background-color: #f2f2f2;
   background-repeat: repeat;
 }
 
