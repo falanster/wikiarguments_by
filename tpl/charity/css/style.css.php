@@ -1755,7 +1755,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde6c1', end
 
 
 
-
+.header_button_orange:hover,
 .button_orange:hover,
 .button_blue:hover{
 opacity:0.8;
