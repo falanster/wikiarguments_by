@@ -1845,11 +1845,11 @@ cursor: pointer;
   position: absolute; 
   color: transparent;
   font-size: 12px;
-  width: 150px;
+  width: auto;
   height: 44px;
 /*  text-align: right; */
 /*  top: 10px; */
-  right: 7px; 
+  right: 7%; 
   cursor:pointer;
 	z-index: 20;
 }
@@ -1857,8 +1857,9 @@ cursor: pointer;
 .header_menu .username {
   color: #87cbff;
   height: 34px;
-  width: 150px;
+  width: auto;
   padding-top: 10px;
+	padding-right: 10px;
   text-align: right;
   position: relative; 
   font-family: Imprima, Tahoma, Geneva, sans-serif;
