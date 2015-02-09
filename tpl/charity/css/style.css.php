@@ -121,6 +121,14 @@ a {
 	background: #f4d2b6;
 }
 
+#header_orange p {
+	margin: 0 10%;
+	padding-top: 2px;
+	color: #a2724e;
+	font-family: ubuntu;
+	font-size: 0.8em;
+}
+
 #header_white {
 /*  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_navigation_background.png');*/
   height: 60px;
@@ -182,17 +190,23 @@ a {
   top: 20px;
 }
 
+.header_white2_wrapper {
+	width: 73%;
+	height: 29px;
+	float: left;
+}
+
 #header_navigation {
 	float: left;
-  width: 20%;
+  width: 30%;
 	position: relative; 
-  margin: 0 0 0 10%;
+  margin: 0 0 0 13%;
 	clear: left;
 	height: 40px;
 }
 
 #header_navigation2 {
-	float: left;
+	float: right;
 }
 
 #header_sponsors {
@@ -250,16 +264,26 @@ a {
 }
 
 .navi_point a {
-  color: #8E8E8E;
   font-family:"Ubuntu";
   display: block;
 	float: left;
 	text-transform: lowercase;
 }
 
-.navi_point a:hover {
+#header_navigation .navi_point a {
   color: #3275b6;
+}
 
+#header_navigation2 .navi_point a {
+  color: #8E8E8E;
+}
+
+#header_navigation .navi_point a:hover {
+  color: #8E8E8E;
+}
+
+#header_navigation2 .navi_point a:hover {
+  color: #3275b6;
 }
 
 navi_point_search {
