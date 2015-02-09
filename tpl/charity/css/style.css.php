@@ -1842,14 +1842,14 @@ cursor: pointer;
 .header_menu {
 	float: right;
 	margin-top: 10px;
- /* position: absolute; */
+  position: absolute; 
   color: transparent;
   font-size: 12px;
   width: 150px;
   height: 44px;
 /*  text-align: right; */
 /*  top: 10px; */
-/*  right: 0px; */
+  right: 7px; 
   cursor:pointer;
 }
 
