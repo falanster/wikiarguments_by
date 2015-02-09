@@ -1851,6 +1851,7 @@ cursor: pointer;
 /*  top: 10px; */
   right: 7px; 
   cursor:pointer;
+	z-index: 20;
 }
 
 .header_menu .username {
