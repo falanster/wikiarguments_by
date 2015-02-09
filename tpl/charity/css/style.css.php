@@ -245,8 +245,15 @@ a {
 
 .divider{
 	margin: 0 5px;
-	color: #8E8E8E;
 	font-family: "Ubuntu";
+}
+
+#header_navigation{
+  color: #3275b6;
+}
+
+#header_navigation2 {
+	color: #8E8E8E;
 }
 
 .navi_point.trend{
