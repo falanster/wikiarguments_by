@@ -120,7 +120,8 @@ var wikiargument = new _Wikiargument('');
   <div id = "wrapper">
     <div id = "header">
 
-   <!-- <div id = "header_blue"></div> -->
+		<div id = "header_orange">
+		</div>
       
 
       <div id = "header_content">
@@ -155,26 +156,26 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 	<div id = "header_orange_button">
 		<?php if(!$sUser->isLoggedIn()) { ?>
 	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("ERROR_NOT_LOGGED_IN") ?>'); return false;">
-		<button class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+		<button class = 'header_button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
 	</a>
 	<?php }else if($sPage->group() && $sPage->group()->getPermission($sUser, ACTION_NEW_QUESTION) == PERMISSION_DISALLOWED) { ?>
 	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("NOTICE_NEW_QUESTION_NO_PERMISSION") ?>'); return false;">
-		<button class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+		<button class = 'header_button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
 	</a>
 	<?php }else if($sPage->group()) { ?>
 	<a href = '<?php echo $sTemplate->getRoot(); ?>groups/<?php echo $sPage->group()->url(); ?>/new-question/'>
-		<div class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+		<div class = 'header_button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
 	</a>
 	<?php }else { ?>
 	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'>
-		<div class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+		<div class = 'header_button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
 	</a>
 	<?php } ?>
 	</div>
 	
 	<div id = "header_orange_button">
 		<a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>
-			<button class = 'header_button_orange button_new_question'><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?><p class="small_button_text">01.01.2015</p></button>
+			<button class = 'header_button_orange second button_new_question'><p class="big_button_text"><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></p><p class="small_button_text">01.01.2015</p></button>
 		</a>
 	</div>
 

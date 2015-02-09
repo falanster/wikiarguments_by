@@ -562,6 +562,7 @@ position:absolute;
   margin-bottom: 10px;
   position: relative;
   width: 70%;
+	font-family: "Ubuntu";
 }
 
 .question_title a {
@@ -1131,6 +1132,7 @@ font-size:16px;
   margin-right: 20px;
   margin-top: 15px;
   padding-bottom:15px;
+	font-family: "Ubuntu";
 }
 
 .counter_argument_box {
@@ -1565,7 +1567,7 @@ clear:both;}
 	font-size:16px;
 	padding:7px 14px;
 	background: #f6a015;
-
+	border: none;
 /*	border:1px solid #e6500b; */
 	color:#ffffff;
 	
@@ -1587,6 +1589,7 @@ letter-spacing: -0.2px;
 font-size:16px;
 padding:7px 14px;
 background:#ee600d;
+border: none;
 /*border-top :1px solid #edb14a;
 border-bottom :1px solid #9c4822;
 border-left: 1px solid #da9650;
@@ -1763,7 +1766,7 @@ cursor: pointer;
   float: right;
   width: 175px;
   height: 20px;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-right: -20px;
   position: relative; 
 
@@ -1838,6 +1841,7 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
   width: 300px;
   float:right;
   background: #3275b7;
+	font-family: "Ubuntu";
 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
