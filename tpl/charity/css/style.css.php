@@ -1565,11 +1565,11 @@ clear:both;}
   height: 250px;
 }
 
-.header_orange_button .first {
+#header_orange_button .first {
 	margin-left: 5%;
 }
 
-.header_orange_button .second {
+#header_orange_button .second {
 	margin-left: 20px;
 }
 

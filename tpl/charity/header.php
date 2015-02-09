@@ -120,11 +120,13 @@ var wikiargument = new _Wikiargument('');
   <div id = "wrapper">
     <div id = "header">
 
-		<div id = "header_orange">
-		</div>
-      
-
-      <div id = "header_content">
+		  <div id = "header_content">
+			
+				<div id = "header_orange">
+					<p><?php echo $sTemplate->getString("HEADER_MESSAGE"); ?>
+					</p>
+				</div>	
+			
        <div id = "header_white">
 <?php if($sPage->group() && $sPage->group()->url()) { ?>
         <a href = '<?php echo $sTemplate->getRoot()."groups/".$sPage->group()->url()."/"; ?>'>
@@ -209,36 +211,38 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 			</div>          <!-- header_white ends-->
 
 			<div id= "header_white2">
-        <div id = "header_navigation">
-          
-<!--
-	      <div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
+				<div class = "header_white2_wrapper">
+					<div id = "header_navigation">
+						
+	<!--
+					<div class = "navi_point trend <?php echo $trendingActive ? "current_page" : "";?>">
 
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTrending; ?>'><?php echo $sTemplate->getString("NAVIGATION_WHATS_HOT"); ?></a>
-          </div> 
--->	
+							<a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTrending; ?>'><?php echo $sTemplate->getString("NAVIGATION_WHATS_HOT"); ?></a>
+						</div> 
+	-->	
 
-          <div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
-          </div>
-					<div class= "navi_point divider">|</div>
-          <div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
-            <a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
-          </div>
-		
+						<div class = "navi_point top <?php echo $topActive ? "current_page" : "";?>">
+							<a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringTop; ?>'><?php echo $sTemplate->getString("NAVIGATION_TOP"); ?></a>
+						</div>
+						<div class= "navi_point divider">|</div>
+						<div class = "navi_point neu <?php echo $newestActive ? "current_page" : "";?>">
+							<a href = '<?php echo $sTemplate->getRoot(); ?><?php echo $filterStringNewest; ?>'><?php echo $sTemplate->getString("NAVIGATION_NEWEST"); ?></a>
+						</div>
+			
+						
+					</div>
+					<div id = "header_navigation2">
 					
+						<div class = "navi_point about">
+							<a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></a>
+						</div> 
+						<div class= "navi_point divider">|</div> 
+						<div class = "navi_point manual">
+							<a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'><?php echo $sTemplate->getString("HTML_META_TITLE_USAGE_MANUAL"); ?></a>
+						</div>	
+					</div>
 				</div>
-				<div id = "header_navigation2">
 				
-					<div class = "navi_point about">
-						<a href = '<?php echo $sTemplate->getRoot(); ?>about/'><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></a>
-					</div> 
-					<div class= "navi_point divider">|</div> 
-					<div class = "navi_point manual">
-						<a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'><?php echo $sTemplate->getString("HTML_META_TITLE_USAGE_MANUAL"); ?></a>
-					</div>	
-        </div>
-
 				<form action = "#" onsubmit = "wikiargument.submitSearch(); return false;">
           <div class = "navi_point_search">
               <input type = "text" value = "<?php echo $sTemplate->getString("NAVIGATION_SEARCH_DEFAULT"); ?>" id = "navi_search" name = "navi_search"
