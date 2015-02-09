@@ -115,6 +115,11 @@ a {
 //  background-repeat: repeat-x;
 //}
 
+#header_orange {
+	width: 100%;
+	height: 25px;
+	background: #f4d2b6;
+}
 
 #header_white {
 /*  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_navigation_background.png');*/
@@ -221,17 +226,19 @@ a {
 
 .navi_point {
   float:left;
+	font-size: 18px;
 }
+
 .divider{
 	margin: 0 5px;
 	color: #8E8E8E;
-	font-size: 19px;
 	font-family: "Ubuntu";
 }
 
 .navi_point.trend{
 	float: left;
-width:100px;}
+	width:100px;
+}
 
 .navi_point.neu{
 	float: left;
@@ -244,7 +251,6 @@ width:100px;}
 
 .navi_point a {
   color: #8E8E8E;
-  font-size: 19px;
   font-family:"Ubuntu";
   display: block;
 	float: left;
@@ -420,9 +426,13 @@ color:#87cbff;
 }
 
 .small_button_text {
-	margin: -2px 0 -7px;
+	margin: -4px 0 -7px;
 	float: right;
 	font-size: 0.5em;
+}
+
+.big_button_text {
+	margin: 0;
 }
 
 .remove_icon {
@@ -1555,10 +1565,17 @@ clear:both;}
   height: 250px;
 }
 
+.header_orange_button .first {
+	margin-left: 5%;
+}
+
+.header_orange_button .second {
+	margin-left: 20px;
+}
+
 .header_button_orange{
 	text-transform: lowercase;
 	margin-top: 12px;
-	margin-left: 5%;
 	min-width:125px;
 	display:inline-block;
 	text-align:center;
@@ -1641,18 +1658,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde6c1', end
 }
 
 .button_blue{
+text-transform: lowercase;
 min-width:120px;
 display:inline-block;
 text-align:center;
 font-family: 'Imprima', sans-serif;
-letter-spacing: -0.5px;
+letter-spacing: -0.2px;
 font-size:16px;
 padding:7px 14px;
 background:#ee600d;
-border-top :1px solid #3aa4d3;
+/*border-top :1px solid #3aa4d3;
 border-bottom :1px solid #1c4276;
 border-left: 1px solid #0072c0;
-border-right:1px solid #00538b;
+border-right:1px solid #00538b; */
+border: none;
 color:#FFF;
 text-shadow: 0 -1px #012f6c;
 
@@ -1669,10 +1688,10 @@ border-radius:5px;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
 -o-border-radius:5px;
-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
+/* box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
 -moz-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
 -webkit-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
--o-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
+-o-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999; */
 
 }
 
@@ -2402,6 +2421,7 @@ clear:both;
   background: #FFFFFF;
   position: relative;
   overflow: hidden;
+	font-family: "Ubuntu";
 }
 
 .argument_full .argument_title {
