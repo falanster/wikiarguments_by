@@ -1860,6 +1860,7 @@ cursor: pointer;
   width: auto;
   padding-top: 10px;
 	padding-right: 10px;
+	padding-left: 10px;
   text-align: right;
   position: relative; 
   font-family: Imprima, Tahoma, Geneva, sans-serif;
