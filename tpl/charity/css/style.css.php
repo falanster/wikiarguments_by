@@ -165,11 +165,12 @@ a {
 
 #header_logo_custom {
   height: 18px;
-  width: 400px;
+  width: 300px;
   position: relative;
   left: 30px;
   top: 20px;
   background-repeat: no-repeat;
+	float: left;
 }
 
 #header_logo_unlisted {
