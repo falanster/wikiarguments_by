@@ -190,8 +190,6 @@ class User
         {
             return $row->state;
         }
-echo i($this->getUserId())."<br>+++_";
-echo i($questionId)."<br>---";
         return FACTION_NONE;
     }
 
