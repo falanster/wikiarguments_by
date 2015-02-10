@@ -118,6 +118,7 @@ a {
 #header_orange {
 	width: 101%;
 	padding-bottom: 5px;
+	padding-top: 3px;
 	background: #f4d2b6;
 }
 
@@ -1757,7 +1758,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde6c1', end
 }
 
 .header_button_orange:hover {
-	color: #f5ba5b;
+	background: #f5ba5b;
 }
 
 .button_orange:hover,
