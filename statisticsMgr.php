@@ -265,6 +265,7 @@ class StatisticsMgr
 
         if($argumentId && !$forceVote)
         {
+
             $faction = $user->getFactionByQuestionId($questionId);
             if($faction == FACTION_NONE)
             {
@@ -293,6 +294,8 @@ class StatisticsMgr
                 unset($cookieData[$questionId]);
             }
         }
+
+
 
         if($vote != VOTE_NONE)
         {

@@ -72,7 +72,7 @@ if($(".vote_distribution").length>0){
 
 }
 
-if($("#form_new_question").length>0){
+if($("#form_new_question").length>0 || $("#form_edit_question").length>0){
 
 $("#new_question_title").bind("keyup", function(){
 
