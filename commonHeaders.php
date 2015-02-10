@@ -32,6 +32,7 @@
  * thereof with code not governed by the terms of the CPAL.
  *******************************************************************************/
 
+
 include("./etc/config.php");
 include("./etc/constants.php");
 include("./etc/opcodes.php");
@@ -87,6 +88,7 @@ include("./pages/license.php");
 mt_srand(time());
 
 $sRequest     = new Request();
+
 
 $sTimer       = new DebugTiming();
 $sTimer->start('init');

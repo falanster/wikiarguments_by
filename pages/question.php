@@ -36,7 +36,14 @@ class PageQuestion extends Page
 {
     public function PageQuestion($row)
     {
+
         global $sDB, $sRequest, $sStatistics, $sUser, $sTemplate;
+
+//var_dump(@$_REQUEST);
+//var_dump($sRequest->getString("vote_select"));
+//exit;
+
+
         parent::Page($row);
 
         $questionTitle  = $sRequest->getString("title");
@@ -58,8 +65,10 @@ class PageQuestion extends Page
         {
             if($this->question->group() && $this->question->group()->getPermission($sUser, ACTION_VOTE) == PERMISSION_DISALLOWED)
             {
-            }else
+
+            } else
             {
+
                 $vote       = $sRequest->getInt("vote");
                 $questionId = $sRequest->getInt("questionId");
                 $argumentId = $sRequest->getInt("argumentId");
@@ -79,9 +88,13 @@ class PageQuestion extends Page
             $this->setShortUrl($this->question->shortUrl());
         }
 
+
+
+
         if($sRequest->getInt("faction_select") &&
            ($sUser->isLoggedIn() || $this->question->hasFlag(QUESTION_FLAG_PART_ALL)))
         {
+
             if($this->question->group() && $this->question->group()->getPermission($sUser, ACTION_VOTE) == PERMISSION_DISALLOWED)
             {
             }else

@@ -190,14 +190,14 @@ class User
         {
             return $row->state;
         }
-
+echo i($this->getUserId())."<br>+++_";
+echo i($questionId)."<br>---";
         return FACTION_NONE;
     }
 
     public function setFactionByQuestionId($questionId, $faction)
     {
         global $sDB, $sStatistics;
-
         validateFaction($faction);
 
         if($this->getFactionByQuestionId($questionId) == $faction)
