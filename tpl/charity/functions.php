@@ -51,20 +51,14 @@ function voteUp($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
     {
         $faction = $sUser->getFactionByQuestionId($questionId);
 
-        if ($faction != $argumentType)
+	if ($faction == 0) {
+	  $canVote  = false;
+          $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";  
+	}
+        if ($faction != 0 && $faction != $argumentType)
         {
-
-echo "<br>Up:<br>";
-echo "questionId: ";
-var_dump($questionId);
-echo "<br>";
-echo "argumentType: ".$argumentType;
-echo "<br>";
-echo "faction: ".$faction;
-echo "<br>---------------";
-
             $canVote  = false;
-            $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";
+            $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_CHOOSE_FACTION")."\"); return false;";
         }
     }
 
@@ -105,20 +99,14 @@ function voteDn($css, $questionId, $argumentId, $argumentType = ARGUMENT_INDEF, 
     {
         $faction = $sUser->getFactionByQuestionId($questionId);
 
+        if ($faction == 0) {
+            $canVote  = false;
+            $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";
+        }
 
-        if($faction != $argumentType)
+
+       if($faction != 0 && $faction != $argumentType)
         {
-
-echo "<br>Down:<br>";
-echo "questionId: ";
-var_dump($questionId);
-echo "<br>";
-echo "argumentType: ".$argumentType;
-echo "<br>";
-echo "faction: ".$faction;
-echo "<br>---------------";
-
-
             $canVote  = false;
             $onSubmit = "wikiargument.raiseError(\"".$sTemplate->getString("NOTICE_VOTE_NOT_CHECKED_IN")."\"); return false;";
         }
@@ -563,7 +551,7 @@ function drawArgument(Question $q, Argument $a, $basePath, $abstract = true)
     $content .= '
   <div class = "argument '.($a->type() == ARGUMENT_PRO ? "argument_pro".$suffix : "argument_con".$suffix).'">
     <div class = "stats argument_stats">
-      <div class = "points argument_points">'.$numPoints.'__</div>
+      <div class = "points argument_points">'.$numPoints.'</div>
       <div class = "points_text argument_points_text">'.$sTemplate->getStringNumber("QUESTION_POINTS", Array(), Array(), $numPoints).'</div>
       '.voteUp('argument_vote_up', $a->questionId(), $a->argumentId(), $a->type(), $q->type(), $q->flags()).'
       '.voteDn('argument_vote_dn', $a->questionId(), $a->argumentId(), $a->type(), $q->type(), $q->flags()).'

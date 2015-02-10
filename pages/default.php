@@ -67,8 +67,6 @@ class PageDefault extends Page
 
         if($sRequest->getInt("vote_select"))
         {
-
-
             $vote       = $sRequest->getInt("vote");
             $questionId = $sRequest->getInt("questionId");
             $argumentId = $sRequest->getInt("argumentId");

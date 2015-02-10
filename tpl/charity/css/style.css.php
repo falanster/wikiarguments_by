@@ -73,8 +73,8 @@ html, body {
 }
 
 html {
-/*  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/background.png'); */
-	background: #f2f2f2;
+/*	background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/murashy.png'); */
+	background-color: #f2f2f2;
   background-repeat: repeat;
 }
 
@@ -101,7 +101,7 @@ a {
   -webkit-box-shadow: 3px 0 6px 3px #DDDDDD;
   -o-box-shadow: 3px 0 6px 3px #DDDDDD;
   position: relative; */
-  height: 100px;
+  height: 120px;
 	min-width: 760px;
   margin:0 auto;
 }
@@ -115,6 +115,19 @@ a {
 //  background-repeat: repeat-x;
 //}
 
+#header_orange {
+	width: 101%;
+	height: 25px;
+	background: #f4d2b6;
+}
+
+#header_orange p {
+	margin: 0 10%;
+	padding-top: 2px;
+	color: #a2724e;
+	font-family: ubuntu;
+	font-size: 0.8em;
+}
 
 #header_white {
 /*  background: url('<?php echo $sTemplate->getTemplateRoot(); ?>img/header_navigation_background.png');*/
@@ -152,11 +165,12 @@ a {
 
 #header_logo_custom {
   height: 18px;
-  width: 400px;
+  width: 300px;
   position: relative;
   left: 30px;
   top: 20px;
   background-repeat: no-repeat;
+	float: left;
 }
 
 #header_logo_unlisted {
@@ -177,17 +191,24 @@ a {
   top: 20px;
 }
 
+.header_white2_wrapper {
+	width: 73%;
+	height: 29px;
+	float: left;
+	line-height: 1.5em;
+}
+
 #header_navigation {
 	float: left;
-  width: 20%;
+  width: 30%;
 	position: relative; 
-  margin: 0 0 0 10%;
+  margin: 0 0 0 13%;
 	clear: left;
 	height: 40px;
 }
 
 #header_navigation2 {
-	float: left;
+	float: right;
 }
 
 #header_sponsors {
@@ -221,17 +242,26 @@ a {
 
 .navi_point {
   float:left;
+	font-size: 18px;
 }
+
 .divider{
 	margin: 0 5px;
-	color: #8E8E8E;
-	font-size: 19px;
 	font-family: "Ubuntu";
+}
+
+#header_navigation{
+  color: #3275b6;
+}
+
+#header_navigation2 {
+	color: #8E8E8E;
 }
 
 .navi_point.trend{
 	float: left;
-width:100px;}
+	width:100px;
+}
 
 .navi_point.neu{
 	float: left;
@@ -243,17 +273,26 @@ width:100px;}
 }
 
 .navi_point a {
-  color: #8E8E8E;
-  font-size: 19px;
   font-family:"Ubuntu";
   display: block;
 	float: left;
 	text-transform: lowercase;
 }
 
-.navi_point a:hover {
+#header_navigation .navi_point a {
   color: #3275b6;
+}
 
+#header_navigation2 .navi_point a {
+  color: #8E8E8E;
+}
+
+#header_navigation .navi_point a:hover {
+  color: #8E8E8E;
+}
+
+#header_navigation2 .navi_point a:hover {
+  color: #3275b6;
 }
 
 navi_point_search {
@@ -293,13 +332,13 @@ navi_point_search {
   padding-left:5px;
   width: 200px;
   border: 1px solid #D2D2D2;
-  border-radius: 10px;
+/*  border-radius: 10px; */
   color: #898989;
   height: 19px;
   font-family: 'Imprima', sans-serif;
   letter-spacing: 0.3px;
-  height:24px;
-  font-size:16px;
+  height: 24px;
+  font-size: 15px;
   margin-right: 10%;
   margin-top: 0px;
 }
@@ -420,9 +459,13 @@ color:#87cbff;
 }
 
 .small_button_text {
-	margin: -2px 0 -7px;
+	margin: -5px 0 -7px;
 	float: right;
-	font-size: 0.5em;
+	font-size: 0.6em;
+}
+
+.big_button_text {
+	margin: 0;
 }
 
 .remove_icon {
@@ -562,6 +605,7 @@ position:absolute;
   margin-bottom: 10px;
   position: relative;
   width: 70%;
+	font-family: "Ubuntu";
 }
 
 .question_title a {
@@ -1049,6 +1093,8 @@ color:#333;
   position: relative;
   padding-bottom: 30px;
   overflow: hidden;
+	font-family: ubuntu;
+	margin-bottom: 10px;
 }
 
 .argument_pro {
@@ -1131,6 +1177,7 @@ font-size:16px;
   margin-right: 20px;
   margin-top: 15px;
   padding-bottom:15px;
+	font-family: "Ubuntu";
 }
 
 .counter_argument_box {
@@ -1142,6 +1189,7 @@ font-size:16px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   background: #FFFFFF;
+	margin-top: -20px;
 }
 
 .counter_argument_box_pro {
@@ -1332,7 +1380,7 @@ left:0px;
   padding-top: 50px;
   color: #707070;
   font-size: 22px;
-  margin-top: 20px;
+  margin-top: 25px;
   background: #FFF;
   border-radius: 15px 15px 10px 10px;
   -moz-border-radius: 15px 15px 10px 10px;
@@ -1553,10 +1601,17 @@ clear:both;}
   height: 250px;
 }
 
+#header_orange_button .first {
+	margin-left: 5%;
+}
+
+#header_orange_button .second {
+	margin-left: 20px;
+}
+
 .header_button_orange{
 	text-transform: lowercase;
 	margin-top: 12px;
-	margin-left: 5%;
 	min-width:125px;
 	display:inline-block;
 	text-align:center;
@@ -1565,9 +1620,10 @@ clear:both;}
 	font-size:16px;
 	padding:7px 14px;
 	background: #f6a015;
-
+	border: none;
 /*	border:1px solid #e6500b; */
 	color:#ffffff;
+	cursor: pointer;
 	
 	width: auto;
 	
@@ -1587,6 +1643,7 @@ letter-spacing: -0.2px;
 font-size:16px;
 padding:7px 14px;
 background:#ee600d;
+border: none;
 /*border-top :1px solid #edb14a;
 border-bottom :1px solid #9c4822;
 border-left: 1px solid #da9650;
@@ -1638,18 +1695,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde6c1', end
 }
 
 .button_blue{
+text-transform: lowercase;
 min-width:120px;
 display:inline-block;
 text-align:center;
 font-family: 'Imprima', sans-serif;
-letter-spacing: -0.5px;
+letter-spacing: -0.2px;
 font-size:16px;
 padding:7px 14px;
 background:#ee600d;
-border-top :1px solid #3aa4d3;
+/*border-top :1px solid #3aa4d3;
 border-bottom :1px solid #1c4276;
 border-left: 1px solid #0072c0;
-border-right:1px solid #00538b;
+border-right:1px solid #00538b; */
+border: none;
 color:#FFF;
 text-shadow: 0 -1px #012f6c;
 
@@ -1666,10 +1725,10 @@ border-radius:5px;
 -moz-border-radius:5px;
 -webkit-border-radius:5px;
 -o-border-radius:5px;
-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
+/* box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
 -moz-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
 -webkit-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
--o-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999;
+-o-box-shadow: 1px 1px #a8d9f0 inset,0px 0px 3px #999; */
 
 }
 
@@ -1699,7 +1758,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde6c1', end
 
 
 
-
+.header_button_orange:hover,
 .button_orange:hover,
 .button_blue:hover{
 opacity:0.8;
@@ -1763,7 +1822,7 @@ cursor: pointer;
   float: right;
   width: 175px;
   height: 20px;
-  margin-top: 15px;
+  margin-top: 5px;
   margin-right: -20px;
   position: relative; 
 
@@ -1783,22 +1842,25 @@ cursor: pointer;
 .header_menu {
 	float: right;
 	margin-top: 10px;
- /* position: absolute; */
+  position: absolute; 
   color: transparent;
   font-size: 12px;
-  width: 150px;
+  width: auto;
   height: 44px;
 /*  text-align: right; */
 /*  top: 10px; */
-/*  right: 0px; */
+  right: 7%; 
   cursor:pointer;
+	z-index: 20;
 }
 
 .header_menu .username {
   color: #87cbff;
   height: 34px;
-  width: 150px;
+  width: auto;
   padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
   text-align: right;
   position: relative; 
   font-family: Imprima, Tahoma, Geneva, sans-serif;
@@ -1838,6 +1900,7 @@ background: linear-gradient(to bottom,  #4188c8 0%,#3275b7 100%);
   width: 300px;
   float:right;
   background: #3275b7;
+	font-family: "Ubuntu";
 
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -2398,6 +2461,7 @@ clear:both;
   background: #FFFFFF;
   position: relative;
   overflow: hidden;
+	font-family: "Ubuntu";
 }
 
 .argument_full .argument_title {
