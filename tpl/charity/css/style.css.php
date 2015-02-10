@@ -117,7 +117,7 @@ a {
 
 #header_orange {
 	width: 101%;
-	height: 25px;
+	padding-bottom: 5px;
 	background: #f4d2b6;
 }
 
@@ -325,6 +325,7 @@ navi_point_search {
 	max-width: 1000px;
 	min-width: 760px;
 	width: auto;
+	font-family: ubuntu;
 }
 
 #navi_search {
@@ -1755,10 +1756,10 @@ background: linear-gradient(to bottom,  #fde6c1 0%,#fdeed6 50%,#fde7c5 100%); /*
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde6c1', endColorstr='#fde7c5',GradientType=0 ); /* IE6-9 */
 }
 
+.header_button_orange:hover {
+	color: #f5ba5b;
+}
 
-
-
-.header_button_orange:hover,
 .button_orange:hover,
 .button_blue:hover{
 opacity:0.8;
