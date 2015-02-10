@@ -79,7 +79,8 @@ foreach($sPage->question()->tags() as $k => $v)
             <span class="characters_left"><?php echo $sTemplate->getString("TAGS_DIVIDE"); ?> <span id="new_question_tags_chars_left"><?echo MAX_TAGS_CHR_LENGTH - strlen($qTags); ?></span> <?php echo $sTemplate->getString("CHARS_WRITTEN_LEFT"); ?></span>
           </div>
         </div>
-
+       <input type="hidden" value="<?php echo QUESTION_TYPE_LISTED; ?>" name="new_question_type">
+<!--
         <div class = "row">
           <div class = "label2"><?php echo $sTemplate->getString("NEW_QUESTION_TYPE"); ?></div>
           <div class = "input">
@@ -99,7 +100,7 @@ foreach($sPage->question()->tags() as $k => $v)
             </select>
           </div>
         </div>
-
+-->
         <div class = "row row_submit">
             <span class = "button_orange" onclick = "$('#form_edit_question').submit(); $(this).attr('disabled','disabled'); return false;"><?php echo $sTemplate->getString("SUBMIT_NEW_QUESTION"); ?></span>
         </div>

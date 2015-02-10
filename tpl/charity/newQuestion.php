@@ -69,7 +69,8 @@ $language   = $sTemplate->getLangBase();
             <span class="characters_left"><?php echo $sTemplate->getString("TAGS_DIVIDE"); ?> <span id="new_question_tags_chars_left"><?echo MAX_TAGS_CHR_LENGTH ?></span> <?php echo $sTemplate->getString("CHARS_WRITTEN_LEFT"); ?></span>
           </div>
         </div>
-
+	<input type="hidden" value="<?php echo QUESTION_TYPE_LISTED; ?>" name="new_question_type">
+<!--
         <div class = "row">
           <div class = "label2"><?php echo $sTemplate->getString("NEW_QUESTION_TYPE"); ?></div>
           <div class = "input">
@@ -93,7 +94,7 @@ $language   = $sTemplate->getLangBase();
         <div class = "row" id = "row_question_unlisted_manipulation" style = "display: none;">
           <?php echo $sTemplate->getString("NOTICE_NEW_QUESTION_UNLISTED_MANIPULATION"); ?>
         </div>
-
+-->
         <div class = "row row_submit">
 <?php
 /*
