@@ -2861,3 +2861,13 @@ small {
 /*insert external style files*/
 @import url('common.css');
 
+/* responsible to 760px */
+@media only screen and (min-width: 760px) and (max-width: 1280px) {
+	.header_white2_wrapper {
+		width: 65%;
+	}
+	
+	#navi_search {
+		margin-right: 5%;
+	}
+}
