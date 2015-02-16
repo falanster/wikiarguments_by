@@ -2864,11 +2864,11 @@ small {
 /* responsible to 760px */
 @media only screen and (min-width: 951px) and (max-width: 1280px) {
 	.header_white2_wrapper {
-		width: 68%;
+		width: 70%;
 	}
 	
 	#navi_search {
-		margin-right: 5%;
+		margin-right: 6%;
 	}
 }
 
@@ -2894,7 +2894,7 @@ small {
 	}
 	
 	#header_orange_button {
-		width: 60%;
+		width: 55%;
 	}
 	
 	#header_navigation {
