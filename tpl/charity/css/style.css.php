@@ -2862,7 +2862,7 @@ small {
 @import url('common.css');
 
 /* responsible to 760px */
-@media only screen and (min-width: 901px) and (max-width: 1280px) {
+@media only screen and (min-width: 951px) and (max-width: 1280px) {
 	.header_white2_wrapper {
 		width: 68%;
 	}
@@ -2872,7 +2872,7 @@ small {
 	}
 }
 
-@media only screen and (min-width: 760px) and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
 	.header_white2_wrapper {
 		width: 65%;
 	}
@@ -2894,7 +2894,7 @@ small {
 	}
 	
 	#header_orange_button {
-		width: 50%;
+		width: 60%;
 	}
 	
 	#header_navigation {
