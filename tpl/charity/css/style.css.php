@@ -2862,12 +2862,42 @@ small {
 @import url('common.css');
 
 /* responsible to 760px */
-@media only screen and (min-width: 760px) and (max-width: 1280px) {
+@media only screen and (min-width: 901px) and (max-width: 1280px) {
+	.header_white2_wrapper {
+		width: 68%;
+	}
+	
+	#navi_search {
+		margin-right: 5%;
+	}
+}
+
+@media only screen and (min-width: 760px) and (max-width: 900px) {
 	.header_white2_wrapper {
 		width: 65%;
 	}
 	
 	#navi_search {
 		margin-right: 5%;
+	}
+	
+	#header_logo {
+		margin-left: 10px;
+	}
+	
+	#header_content {
+		height: 100px;
+	}
+	
+	#header_white {
+		height: 100px;
+	}
+	
+	#header_orange_button {
+		width: 50%;
+	}
+	
+	#header_navigation {
+		margin: 0 0 0 8%;
 	}
 }
