@@ -42,8 +42,75 @@ $language   = $sTemplate->getLangBase();
 <div id = "content_wide">
   <div class = "thin">
 
-<div class = "headline">Пра нас</div>
+<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_ABOUT"); ?></div>
 <?php echo $sTemplate->getString("ABOUT_US"); ?>
+
+<div>
+<ul>Асноўная інфармацыя, якую трэба ведаць, каб далучыцца да платформы “Інструмент удзелу”:</ul>
+<li> <h3>Як карыстацца сістэмай </h3>
+<p>Падрабязны скрынкаст, як зарэгістравацца на платформе, галасаваць за прапановы, дадаваць свае прапановы на галасаванне і іншае. </p></li>
+<li> <h3>Што абмяркоўваем </h3>
+<p>Старонка са сціслым апісаннем законапраекта “Аб грамадска карыснай дзейнасці”, які абмяркоўваецца на дадзенай платформе. Падрабязная інфармацыя пра дзейную версію законапраекта, агульная стратэгія распрацоўкі і прасоўвання законапраекта на дзяржаўны ўзровень. </p></li>
+<li> <h3>Правілы і ліцэнзіі </h3>
+<p>Агульныя правілы, якіх трэба прытрымлівацца, калі вы працуеце з “Інструментам удзелу”, і ліцэнзія, пад якой распаўсюджваецца платформа.</p></li>
+<li> <h3>Ахвяраваць праекту</h3>
+<p>Падтрымаць развіццё “Інструменту удзелу” вы можаце дабрачынным ахвяраваннем. </p></li>
+</div>
+
+<div>
+Пажаданні, прапановы ці заўвагі пішыце ў форму адваротнай сувязі.
+</div>
+
+<div>
+	<div class="logo-about-us falanster">
+		<a target="_blank" href="http://falanster.by/be/eparticipation-tool">
+			<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/falanster_sitelogo_by.png" alt="" width="335" height="49">
+		</a>
+	</div>
+	<div class="logo-about-us akt">
+		<a target="_blank" href="http://actngo.info/article/obsuzhdaem-proekt-zakona-ob-obshchestvenno-poleznoy-deyatelnosti">
+			<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/logo-ACT-mini.jpg" alt="" width="150" height="85">
+		</a>
+	</div>
+</div>
+
+<h2>Партнёры </h2>
+<div>
+	<div class="logo-partner">
+		<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/partner_1.png" alt="" width="150" height="150">
+	</div>
+	<div class="logo-partner">
+		<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/partner_2.png" alt="" width="150" height="150">
+	</div>
+	<div class="logo-partner">
+		<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/partner_3.png" alt="" width="150" height="150">
+	</div>
+	<div class="logo-partner">
+		<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/partner_4.png" alt="" width="150" height="150">
+	</div>
+</div>
+
+<h2>Удзельнічай! </h2>
+
+	<div id = "big_orange_button">
+		<?php if(!$sUser->isLoggedIn()) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("ERROR_NOT_LOGGED_IN") ?>'); return false;">
+		<button class = 'button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+	</a>
+	<?php }else if($sPage->group() && $sPage->group()->getPermission($sUser, ACTION_NEW_QUESTION) == PERMISSION_DISALLOWED) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("NOTICE_NEW_QUESTION_NO_PERMISSION") ?>'); return false;">
+		<button class = 'button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+	</a>
+	<?php }else if($sPage->group()) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>groups/<?php echo $sPage->group()->url(); ?>/new-question/'>
+		<div class = 'button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+	</a>
+	<?php }else { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'>
+		<div class = 'button_orange first button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+	</a>
+	<?php } ?>
+	</div>
 
 	</div>
 </div>

@@ -120,10 +120,10 @@ var wikiargument = new _Wikiargument('');
   <div id = "wrapper">
     <div id = "header">
 	
-				<div id = "header_orange">
+		<!--		<div id = "header_orange">
 					<p><?php echo $sTemplate->getString("HEADER_MESSAGE"); ?>
 					</p>
-				</div>	
+				</div>	-->
 			
 			<div id = "header_content">
 			
