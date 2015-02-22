@@ -59,7 +59,7 @@ $language   = $sTemplate->getLangBase();
 </div>
 
 <div>
-Пажаданні, прапановы ці заўвагі пішыце ў форму адваротнай сувязі.
+Пажаданні, прапановы ці заўвагі пішыце ў <a href="http://falanster.by/be/kantakt" target="_blank">форму адваротнай сувязі</a>.
 </div>
 
 <div class="main-logo">

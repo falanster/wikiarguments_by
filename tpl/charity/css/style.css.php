@@ -1647,9 +1647,10 @@ clear:both;}
 	display:inline-block;
 	text-align:center;
 	font-family: 'Imprima', sans-serif;
-	letter-spacing: -0.2px;
-	font-size: 36px;
-	padding:7px 14px;
+letter-spacing: 0.3px;
+font-size: 36px;
+
+padding: 10px 17px 12px 18px;
 	background:#ee600d;
 	border: none;
 	
