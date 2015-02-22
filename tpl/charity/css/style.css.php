@@ -1636,6 +1636,36 @@ clear:both;}
 	-o-border-radius:5px;
 }
 
+.big_button_orange {
+		text-transform: lowercase;
+	min-width:125px;
+	display:inline-block;
+	text-align:center;
+	font-family: 'Imprima', sans-serif;
+	letter-spacing: -0.2px;
+	font-size: 36px;
+	padding:7px 14px;
+	background:#ee600d;
+	border: none;
+	
+	color:#FFF;
+
+	background: #f6a015; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f6a015 0%, #f17b10 60%, #e6500b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6a015), color-stop(60%,#f17b10), color-stop(100%,#e6500b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f6a015 0%,#f17b10 60%,#e6500b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f6a015 0%,#f17b10 60%,#e6500b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f6a015 0%,#f17b10 60%,#e6500b 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f6a015 0%,#f17b10 60%,#e6500b 100%); /* W3C */
+
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+
+	width: auto;
+}
+
 .button_orange {
 text-transform: lowercase;
 min-width:125px;
@@ -2861,16 +2891,18 @@ small {
 
 .main-logo {
 	width: 100%;
+	float: left;
+	margin-bottom: 20px;
 }
 
 .logo-about-us {
 	float: left;
-	margin-top: 30px;
 	margin-right: 30px;
 }
 
 .partners {
 	width: 100%;
+	float: left;
 }
 
 .logo-partner{
