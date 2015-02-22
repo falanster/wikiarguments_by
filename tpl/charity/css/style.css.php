@@ -81,7 +81,8 @@ html {
 ul, li {
   padding: 0px;
   margin: 0px;
-  list-style-type: none;
+/*  list-style-type: none; */
+	margin-left: 20px;
 }
 
 body {
@@ -2858,12 +2859,24 @@ small {
   color: #484848;
 }
 
+.main-logo {
+	width: 100%;
+}
+
 .logo-about-us {
 	float: left;
+	margin-top: 30px;
+	margin-right: 30px;
+}
+
+.partners {
+	width: 100%;
 }
 
 .logo-partner{
 	float: left;
+	margin-top: 30px;
+	margin-right: 30px;
 }
 
 /*insert external style files*/

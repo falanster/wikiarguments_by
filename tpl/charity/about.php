@@ -62,7 +62,7 @@ $language   = $sTemplate->getLangBase();
 Пажаданні, прапановы ці заўвагі пішыце ў форму адваротнай сувязі.
 </div>
 
-<div>
+<div class="main-logo">
 	<div class="logo-about-us falanster">
 		<a target="_blank" href="http://falanster.by/be/eparticipation-tool">
 			<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/falanster_sitelogo_by.png" alt="" width="335" height="49">
@@ -70,13 +70,13 @@ $language   = $sTemplate->getLangBase();
 	</div>
 	<div class="logo-about-us akt">
 		<a target="_blank" href="http://actngo.info/article/obsuzhdaem-proekt-zakona-ob-obshchestvenno-poleznoy-deyatelnosti">
-			<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/logo-ACT-mini.jpg" alt="" width="150" height="85">
+			<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/logo-ACT-mini.jpg" alt="" width="250" height="141">
 		</a>
 	</div>
 </div>
 
 <h2>Партнёры </h2>
-<div>
+<div class="partners">
 	<div class="logo-partner">
 		<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/partner_1.png" alt="" width="150" height="150">
 	</div>
