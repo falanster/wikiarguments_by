@@ -1423,6 +1423,11 @@ background:url(<?php echo $sTemplate->getTemplateRoot(); ?>img/assets/plus.png) 
   margin-top: 29px;
 }
 
+.big_button_new_question {
+  float: left;
+	margin-bottom: 50px;
+}
+
 .button_new_counter_argument {
 
 }
@@ -2892,7 +2897,12 @@ small {
 .main-logo {
 	width: 100%;
 	float: left;
-	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.main-logo .falanster {
+	margin-top: 80px;
 }
 
 .logo-about-us {
@@ -2903,11 +2913,11 @@ small {
 .partners {
 	width: 100%;
 	float: left;
+	margin-bottom: 30px;
 }
 
 .logo-partner{
 	float: left;
-	margin-top: 30px;
 	margin-right: 30px;
 }
 
