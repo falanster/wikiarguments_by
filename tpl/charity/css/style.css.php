@@ -2902,7 +2902,7 @@ small {
 }
 
 .main-logo .falanster {
-	margin-top: 80px;
+	margin-top: 60px;
 }
 
 .logo-about-us {
