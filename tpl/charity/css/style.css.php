@@ -2858,6 +2858,14 @@ small {
   color: #484848;
 }
 
+.logo-about-us {
+	float: left;
+}
+
+.logo-partner{
+	float: left;
+}
+
 /*insert external style files*/
 @import url('common.css');
 
