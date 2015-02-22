@@ -394,7 +394,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
   top: 98px;
   color: #87cbff;
   font-size: 13px;
-  width: 430px;
+  width: 500px;
 	margin: 0 auto;
 }
 
