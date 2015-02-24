@@ -116,6 +116,10 @@ a {
 //  background-repeat: repeat-x;
 //}
 
+.h3-title {
+	margin: 0;
+}
+
 #header_orange {
 	width: 101%;
 	padding-bottom: 5px;
