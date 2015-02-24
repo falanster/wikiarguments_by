@@ -82,7 +82,7 @@ ul, li {
   padding: 0px;
   margin: 0px;
 /*  list-style-type: none; */
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 body {
@@ -117,7 +117,11 @@ a {
 //}
 
 .h3-title {
-	margin: 0;
+	margin: -20px 0 0 0;
+}
+
+.li-static {
+	margin-left: 20px;
 }
 
 #header_orange {
