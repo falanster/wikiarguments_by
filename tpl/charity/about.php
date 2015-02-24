@@ -46,7 +46,7 @@ $language   = $sTemplate->getLangBase();
 <?php echo $sTemplate->getString("ABOUT_US"); ?>
 </br>
 <div>
-<ul>Асноўная інфармацыя, якую трэба ведаць, каб далучыцца да платформы “Інструмент удзелу”:
+<ul><p>Асноўная інфармацыя, якую трэба ведаць, каб далучыцца да платформы “Інструмент удзелу”:</p>
 	<li class="li-static"> <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'><h3 class="h3-title">Як карыстацца сістэмай </h3> </a>
 	<p>Падрабязны скрынкаст, як зарэгістравацца на платформе, галасаваць за прапановы, дадаваць свае прапановы на галасаванне і іншае. </p></li>
 	<li class="li-static"> <a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'><h3 class="h3-title">Што абмяркоўваем </h3> </a>
