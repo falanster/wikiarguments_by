@@ -54,6 +54,8 @@ $language   = $sTemplate->getLangBase();
 	<ul>
 		<li>Усе каментары, заўвагі, прапановы выкладзеныя ў Інструменце Ўдзелу знаходзяцца ў грамадскім здабытку, значыць ўсё абмеркаванне можна свабодна выкарыстоўваць з пазначэннем аўтарства.</li>
 		<li>Праграмны код сістэмы даступны пад адкрытай (opensource) публічнай ліцэнзіяй <a href="http://opensource.org/licenses/CPAL-1.0" target="_blank">CPAL-1.0.</a></li>
+		<li>Арыгінальны <a href="https://code.google.com/p/wikiarguments/source/checkout" target="_blank">прататып</a> платформы электроннага ўдзелу.</li>
+		<li>Рэпазіторый <a href="https://github.com/falanster/wikiarguments_by">працуючай версіі</a> інструменту электроннага удзелу</li>
 	</ul>
 	<br />
 	<br />
