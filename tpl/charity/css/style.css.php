@@ -402,7 +402,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e63381cd', e
   top: 98px;
   color: #87cbff;
   font-size: 13px;
-  width: 570px;
+  width: 600px;
   margin: 0 auto;
 }
 
