@@ -48,6 +48,9 @@ $language   = $sTemplate->getLangBase();
         <div class = "headline"><?php echo $sTemplate->getString("SIGNUP_HEADLINE"); ?></div>
       </div>
       <div class = "row">
+         <?php echo $sTemplate->getString("RULE_FOR_SIGNUP"); ?>
+      </div>
+      <div class = "row">
         <div class = "label"><?php echo $sTemplate->getString("SIGNUP_USERNAME"); ?></div>
         <div class = "input">
           <input type = "text" id = "signup_username" name = "signup_username" value = "<?php echo $sRequest->getStringPlain("signup_username"); ?>"></input>
