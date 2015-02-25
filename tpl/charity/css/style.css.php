@@ -1833,7 +1833,7 @@ cursor: pointer;
 
 .signup .label,
 .login .label {
-  width: 170px; 
+  width: 250px; 
   float: left;
   position: relative;
   font-size: 16px;
