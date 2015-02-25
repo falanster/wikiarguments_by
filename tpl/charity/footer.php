@@ -72,11 +72,12 @@ wikiargument.raiseNotice("<?php echo $notice; ?>");
           <a href = '#' onclick = "$('#footer_submenu').show(); return false;"><?php echo $sTemplate->getString("LANGUAGE"); ?></a> 
         </div>
         <div id = "footer_menu">
-          <a href = '<?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT_LINK"); ?>'><?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT"); ?></a> |
-          <a href = '<?php echo $sTemplate->getString("FOOTER_CONTACT_LINK"); ?>'><?php echo $sTemplate->getString("FOOTER_CONTACT"); ?></a> |
-          <a href = '<?php echo $sTemplate->getRoot(); ?>license/'><?php echo $sTemplate->getString("HTML_META_TITLE_LICENSE"); ?></a> |
-          <a href = 'https://github.com/falanster/wikiarguments_by'>Github</a> |
-					<a href = 'http://www.wikiarguments.net'>Powered by Wikiarguments</a>
+          <a href = '<?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT_LINK"); ?>' target = '_blank'><?php echo $sTemplate->getString("FOOTER_ABOUT_PROJECT"); ?></a> |
+          <a href = '<?php echo $sTemplate->getString("FOOTER_CONTACT_LINK"); ?>' target = '_blank'><?php echo $sTemplate->getString("FOOTER_CONTACT"); ?></a> |
+					<a href = 'http://falanster.by/be/help' target = '_blank'><?php echo $sTemplate->getString("DONATE"); ?></a> |
+          <a href = '<?php echo $sTemplate->getRoot(); ?>license/'><?php echo $sTemplate->getString("FOOTER_LICENSE"); ?></a> |
+          <a href = 'https://github.com/falanster/wikiarguments_by' target = '_blank'>Github</a> |
+					<a href = 'http://www.wikiarguments.net' target = '_blank'>Powered by Wikiarguments</a>
         </div>
         <div id = "footer_submenu" style = "display: none;">
           <?php echo $sTemplate->getString("GERMAN_URL"); ?><?php echo $sTemplate->getString("GERMAN"); ?></a> |

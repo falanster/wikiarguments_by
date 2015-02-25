@@ -44,7 +44,54 @@ $language   = $sTemplate->getLangBase();
 
 		<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></div>
 
+<div>
+<p>На гэтай платформе абмяркоўваецца законапраект “Аб грамадска карыснай дзейнасці”. </p>
 
+<p>Сёння раз'яднанасць прававых актаў, прабелы ў заканадаўстве ў пэўнай ступені перашкаджаюць развіццю дабрачыннай дзейнасці, спонсарства, не дазваляючы некамерцыйным арганізацыям, іншым юрыдычным асобам, а таксама грамадзянам стаць паўнапраўнымі партнёрамі дзяржавы ў выкананні яго сацыяльных функцый.</p>
+
+<p>Рэалізацыя законапраекта будзе садзейнічаць павелічэнню ролі дабрачынных арганізацый ў грамадскім жыцці, стымуляванню і павышэнню эфектыўнасці іх грамадска карыснай дзейнасці, ўстанаўлення празрыстасці і справаздачнасці іх грамадству.</p>
+</div>
+</br>
+
+	<div id = "big_orange_button">
+		<a href = '<?php echo $sTemplate->getRoot(); ?>'>
+			<button class = 'big_button_orange'>спампаваць законапраект</button>
+		</a>
+	</div>
+
+<div>
+</br>
+<h3>План стварэння </h3>
+<p>[Тут будзе дыяграма працэсу стварэння законапраекта]</p>
+
+<p>Этап распрацоўкі законапраекта адбываецца з дапамогай платформы “Інструмент удзелу”. Кожны чалавек можа <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'>зарэгістравацца </a> на сайце, удзельнічаць у існых абмеркаваннях і галасаваннях, дадаваць свае прапановы, аргументы і контр-аргументы. Падрабязней пра працу платформы глядзіце на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>“Як карыстацца”</a>, а  пра правілы паводзінаў на сайце - на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>license/'>“Правілы і ліцэнзія”</a>. </p>
+</div>
+</br>
+<div>
+<h3>Версіі законапраекта:</h3>
+<p>[Тут будуць папярэднія версіі законапраекта]</p>
+</div>
+</br></br>
+
+	<div id = "big_orange_button">
+		<?php if(!$sUser->isLoggedIn()) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("ERROR_NOT_LOGGED_IN") ?>'); return false;">
+		<button class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+	</a>
+	<?php }else if($sPage->group() && $sPage->group()->getPermission($sUser, ACTION_NEW_QUESTION) == PERMISSION_DISALLOWED) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("NOTICE_NEW_QUESTION_NO_PERMISSION") ?>'); return false;">
+		<button class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+	</a>
+	<?php }else if($sPage->group()) { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>groups/<?php echo $sPage->group()->url(); ?>/new-question/'>
+		<div class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+	</a>
+	<?php }else { ?>
+	<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'>
+		<div class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+	</a>
+	<?php } ?>
+	</div>
 
 	</div>
 </div>
