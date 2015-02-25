@@ -48,7 +48,8 @@ define("MYSQL_NAME",                        ""); //add mysql name
 define("MYSQL_NAME_GLOBAL",                 MYSQL_NAME);
 
 /* url to the template directory with trailing slash */
-define("TEMPLATE_ROOT",                     "http://<yourhost>/tpl/default/");
+/* default it is the topic by default you can create new one*/
+define("TEMPLATE_ROOT",                     "http://<yourhost>/tpl/default/"); 
 
 /* absolute path to the template directory on the file system */
 define("TEMPLATE_ROOT_ABS",                 "<add-path-here>/tpl/default/");
@@ -64,7 +65,7 @@ define("SHORTURL_BASE",                     "http://wa.nf/");
 
 /* sendmail data */
 define("SENDMAIL_FROM",                     "admin@<yourhost>");
-define("SENDMAIL_FROM_NAME",                "admin wikiargby");
+define("SENDMAIL_FROM_NAME",                "admin eparticipation tool");
 
 setlocale(LC_ALL, 'be_BE');
 
@@ -138,7 +139,7 @@ function getGlobalTables()
 
 function getAvailableLanguages()
 {
-    $lang = Array("beBE");
+    $lang = Array("beBE"); //mark default language
     return $lang;
 }
 ?>
