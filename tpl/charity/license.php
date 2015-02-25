@@ -56,6 +56,14 @@ $language   = $sTemplate->getLangBase();
 		<li>Праграмны код даступны пад ліцеэзіяй CPAL-1.0.</li>
 		<li>Арыгінальны прататып платформы электроннага ўдзелу.</li>
 	</ul>
+	<br />
+	<br />
+	<br />
+	<div id="big_orange_button">
+          <a href="/new-question/">
+	    <div class="big_button_orange first big_button_new_question">Дадаць пытанне</div>
+	  </a>
+	</div>
 
   </div>
 </div>
