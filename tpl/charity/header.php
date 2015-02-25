@@ -86,7 +86,7 @@ if($sPage->group())
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=1100" />
   <meta http-equiv="content-language" content="<?php echo $sTemplate->getString("HTML_HEADER_META_LANG"); ?>" />
-  <title>[Charity-DEVELOPMENT]<?php echo $sPage->title(); ?></title>
+  <title><?php echo $sPage->title(); ?></title>
 
 
   <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/jquery-ui-1.7.2.custom.css.php" />
