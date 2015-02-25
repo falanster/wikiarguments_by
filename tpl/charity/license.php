@@ -42,11 +42,22 @@ $language   = $sTemplate->getLangBase();
 <div id = "content_wide">
   <div class = "thin">
 
-		<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_LICENSE"); ?></div>
+	<div class = "headline"><?php echo $sTemplate->getString("HTML_META_TITLE_LICENSE"); ?></div>
+	<h3>Правілы</h3>
+	<ol>
+		<li>Выказвайцеся па <a href="/discussion/" target="_blank">тэме</a>,</li>
+		<li>Паважайце іншых удзельнікаў,</li>
+		<li>Будзьце лаканічнымі</li>
+	</ol>
+		
+	<h3>Ліцэнзія</h3>
+	<ul>
+		<li>Усе каментары знаходзяцца ў грамадскім здабытку, значыць ўсё абмеркаванне можна выкарыстоўваць с пазначэннем аўтарства.</li>
+		<li>Праграмны код даступны пад ліцеэзіяй CPAL-1.0.</li>
+		<li>Арыгінальны прататып платформы электроннага ўдзелу.</li>
+	</ul>
 
-
-
-	</div>
+  </div>
 </div>
 
 <?php include($sTemplate->getTemplateRootAbs()."footer.php"); ?>
