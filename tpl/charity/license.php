@@ -52,15 +52,14 @@ $language   = $sTemplate->getLangBase();
 		
 	<h3>Ліцэнзія</h3>
 	<ul>
-		<li>Усе каментары знаходзяцца ў грамадскім здабытку, значыць ўсё абмеркаванне можна выкарыстоўваць с пазначэннем аўтарства.</li>
-		<li>Праграмны код даступны пад ліцеэзіяй CPAL-1.0.</li>
-		<li>Арыгінальны прататып платформы электроннага ўдзелу.</li>
+		<li>Усе каментары, заўвагі, прапановы выкладзеныя ў Інструменце Ўдзелу знаходзяцца ў грамадскім здабытку, значыць ўсё абмеркаванне можна свабодна выкарыстоўваць з пазначэннем аўтарства.</li>
+		<li>Праграмны код сістэмы даступны пад адкрытай (opensource) публічнай ліцэнзіяй <a href="http://opensource.org/licenses/CPAL-1.0" target="_blank">CPAL-1.0.</a></li>
 	</ul>
 	<br />
 	<br />
 	<br />
 	<div id="big_orange_button">
-          <a href="/new-question/">
+          <a href="<?php echo $sTemplate->getRoot(); ?>new-question/">
 	    <div class="big_button_orange first big_button_new_question">Дадаць пытанне</div>
 	  </a>
 	</div>
