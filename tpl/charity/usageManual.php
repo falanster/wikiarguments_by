@@ -47,7 +47,7 @@ $language   = $sTemplate->getLangBase();
 		<?php echo $sTemplate->getString("USAGE_MANUAL"); ?>
 
 		<div>
-			<h3>Меню:<h3>
+			<h3>Меню:</h3>
 			<ul>
 				<li><a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a></li>
 				<li><a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>Што абмяркоўваем</a></li>
