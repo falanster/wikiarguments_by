@@ -93,6 +93,7 @@ a {
   text-decoration: none;
   cursor: hand;
   cursor: pointer;
+	color: #579bcc;
 }
 
 #header {
@@ -1807,7 +1808,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fde6c1', end
 }
 
 .button_orange:hover,
-.button_blue:hover{
+.button_blue:hover,
+.big_button_orange:hover{
 opacity:0.8;
 cursor: pointer;
 }
