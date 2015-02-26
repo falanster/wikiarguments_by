@@ -55,7 +55,7 @@ $language   = $sTemplate->getLangBase();
 </br>
 
 	<div id = "big_orange_button">
-		<a href = '<?php echo $sTemplate->getRoot(); ?>'>
+		<a href = "https://github.com/falanster/charity-docs/blob/master/actual/Proekt-Zakona-OPD-10-20-2014.doc?raw=true">
 			<button class = 'big_button_orange'>спампаваць законапраект</button>
 		</a>
 	</div>
@@ -63,14 +63,20 @@ $language   = $sTemplate->getLangBase();
 <div>
 </br>
 <h3>План стварэння </h3>
-<p>[Тут будзе дыяграма працэсу стварэння законапраекта]</p>
-
+<p><a href="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_test.png"><img src="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_test.png" width="700"></a></p>
 <p>Этап распрацоўкі законапраекта адбываецца з дапамогай платформы “Інструмент удзелу”. Кожны чалавек можа <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'>зарэгістравацца </a> на сайце, удзельнічаць у існых абмеркаваннях і галасаваннях, дадаваць свае прапановы, аргументы і контр-аргументы. Падрабязней пра працу платформы глядзіце на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>“Як карыстацца”</a>, а  пра правілы паводзінаў на сайце - на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>license/'>“Правілы і ліцэнзія”</a>. </p>
 </div>
 </br>
 <div>
 <h3>Версіі законапраекта:</h3>
-<p>[Тут будуць папярэднія версіі законапраекта]</p>
+<p>
+<ul>
+<li><a href="https://github.com/falanster/charity-docs/blob/master/17.11.2014/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0-%D0%BE%D0%B1-%D0%9E%D0%9F%D0%94-17-11-2014.doc">Версія ад 17.11.2014</a></li>
+<li><a href="https://github.com/falanster/charity-docs/blob/master/20.10.2014/Proekt-Zakona-OPD-10-20-%D0%B1%D0%B5%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2.doc?raw=true">Версія ад 20.10.2014</a> (абмяркоўваем)</li>
+<li><a href="https://github.com/falanster/charity-docs/blob/master/10.10.2014/Proekt-Zakona-OPD-10-10-2014.doc?raw=true">Версія ад 10.10.2014</a></li>
+<li><a href="https://github.com/falanster/charity-docs/blob/master/15.09.2014/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0-%D0%BE%D0%B1-%D0%9E%D0%9F%D0%94-09-15-%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82.doc?raw=true">Версія ад 15.09.2014</a></li>
+</ul>
+</p>
 </div>
 </br></br>
 
