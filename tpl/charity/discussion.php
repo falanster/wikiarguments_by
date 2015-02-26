@@ -63,12 +63,12 @@ $language   = $sTemplate->getLangBase();
 <div>
 </br>
 <h3>План стварэння </h3>
-<p><a href="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_test.png"><img src="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_test.png" width="700"></a></p>
+<p><a href="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_test.png" target="_blank"><img src="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_test.png" style="min-weight: 960px;"></a></p>
 <p>Этап распрацоўкі законапраекта адбываецца з дапамогай платформы “Інструмент удзелу”. Кожны чалавек можа <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'>зарэгістравацца </a> на сайце, удзельнічаць у існых абмеркаваннях і галасаваннях, дадаваць свае прапановы, аргументы і контр-аргументы. Падрабязней пра працу платформы глядзіце на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>“Як карыстацца”</a>, а  пра правілы паводзінаў на сайце - на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>license/'>“Правілы і ліцэнзія”</a>. </p>
 </div>
 </br>
 <div>
-<h3>Версіі законапраекта:</h3>
+<h3>Усе версіі законапраекта:</h3>
 <p>
 <ul>
 <li><a href="https://github.com/falanster/charity-docs/blob/master/17.11.2014/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0-%D0%BE%D0%B1-%D0%9E%D0%9F%D0%94-17-11-2014.doc">Версія ад 17.11.2014</a></li>
