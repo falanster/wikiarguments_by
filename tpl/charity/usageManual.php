@@ -46,6 +46,36 @@ $language   = $sTemplate->getLangBase();
 
 		<?php echo $sTemplate->getString("USAGE_MANUAL"); ?>
 
+		<div>
+			<h3>Меню:<h3>
+			<ul>
+				<li><a href = '<?php echo $sTemplate->getRoot(); ?>about/'>Пра нас</a></li>
+				<li><a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>Што абмяркоўваем</a></li>
+				<li><a href = 'http://falanster.by/be/help' target = '_blank'>Дапамагчы праекту<a></li>
+				<li><a href = '<?php echo $sTemplate->getRoot(); ?>license/'>Правілы і ліцэнзія<a></li>
+			</ul>
+		</div>
+		
+			<div id = "big_orange_button">
+				<?php if(!$sUser->isLoggedIn()) { ?>
+			<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("ERROR_NOT_LOGGED_IN") ?>'); return false;">
+				<button class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+			</a>
+			<?php }else if($sPage->group() && $sPage->group()->getPermission($sUser, ACTION_NEW_QUESTION) == PERMISSION_DISALLOWED) { ?>
+			<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/' onclick = "wikiargument.raiseError('<?php echo $sTemplate->getString("NOTICE_NEW_QUESTION_NO_PERMISSION") ?>'); return false;">
+				<button class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></button>
+			</a>
+			<?php }else if($sPage->group()) { ?>
+			<a href = '<?php echo $sTemplate->getRoot(); ?>groups/<?php echo $sPage->group()->url(); ?>/new-question/'>
+				<div class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+			</a>
+			<?php }else { ?>
+			<a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'>
+				<div class = 'big_button_orange first big_button_new_question'><?php echo $sTemplate->getString("NEW_QUESTION"); ?></div>
+			</a>
+			<?php } ?>
+			</div>
+		
 	</div>
 </div>
 
