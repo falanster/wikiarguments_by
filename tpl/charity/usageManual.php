@@ -55,6 +55,8 @@ $language   = $sTemplate->getLangBase();
 				<li><a href = '<?php echo $sTemplate->getRoot(); ?>license/'>Правілы і ліцэнзія<a></li>
 			</ul>
 		</div>
+		</br>
+		</br>
 		
 			<div id = "big_orange_button">
 				<?php if(!$sUser->isLoggedIn()) { ?>
