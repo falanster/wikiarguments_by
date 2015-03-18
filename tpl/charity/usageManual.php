@@ -55,15 +55,15 @@ $language   = $sTemplate->getLangBase();
 
 <ol>
 <li>Пачнем з рэгістрацыі: робіцца гэта вельмі проста. 
-Заходзім <a href = '<?php echo $sTemplate->getRoot(); ?>signup//'>на адмысловую старонку</a>, прыдумляем лагін і пароль, уводзім іх у адпаведныя радкі.</li>
+Заходзім <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'>на адмысловую старонку</a>, прыдумляем лагін і пароль, уводзім іх у адпаведныя радкі.</li>
 <li>Далей вам на пошту прыходзіць паведамленне, у якім неабходна пацвердзіць рэгістрацыю.</li>
 </ol>
-<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/registration.png" alt="" width="650">
+<center><img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/registration.png" alt="" width="650"></center>
 
 <p>Пацвердзілі? Цудоўна! Цяпер вы можаце пачынаць сваё абмеркаванне! Але найперш ўсё-ткі зайдзіце на старонкі 
 <a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>“Што абмяркоўваем”</a> і 
 <a href = '<?php echo $sTemplate->getRoot(); ?>license/'>“Правілы і ліцэнзія”</a> і ўважліва іх прачытайце.</p>
-
+<br/><br/>
 <h2>Як дадаць пытанне?</h2>
 
 <p>Тут мы навучымся дадаваць свае пытанні для абмеркавання на платформе “Інструмент Удзелу”.</p>
@@ -74,8 +74,8 @@ $language   = $sTemplate->getLangBase();
 <li>Запаўняем назву. Стараемся, каб фармулёўка была не даўжэйшай за 100 сімвалаў. Дэталі можна пакінуць для графы “Падрабязнасці”: гэта можа быць ваша версія новага азначэння або яго ўдакладненне. Памер не абмежаваны, але будзьце лаканічнымі, бо вельмі доўгія кавалкі тэктсу складана чытаць. Лепш разбіць сваю прапанову на некалькі.</li>
 <li>Ціснем “Даслаць” – і вуаля – наша пытанне дададзена.</li>
 </ol>
-<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/add-new-question.png" alt="" width="650">
-
+<center><img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/add-new-question.png" alt="" width="650"></center>
+<br/><br/>
 <h2>Як дадаць аргумент?</h2>
 
 <p>Сваю ж прапанову вы можаце альбо падтрымаць, альбо не падтрымаць.</p>
@@ -89,8 +89,8 @@ $language   = $sTemplate->getLangBase();
 <p>Калі ж вы не падтрымліваеце парпанову, то можаце дадаць контраргумент. Гэта робіцца такім жа чынам, як і дадаванне аргументу.</p>
 
 <p><strong>Увага</strong>: рэдагаваць пытанне можна толькі на працягу 10 хвілін з моманту яго стварэння.</p>
-<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/navigation-three.png" alt="" width="900">
-
+<center><img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/navigation-three.png" alt="" width="900"></center>
+<br/><br/>
 <h2>Галасаванне і прасоўванне пытанняў і аргументаў</h2>
 
 <p>Працягваем вучыцца карыстацца платформай Інструмент Удзелу і зараз пагутарым пра галасаванне і прасоўванне.</p>
@@ -100,10 +100,10 @@ $language   = $sTemplate->getLangBase();
 <li>Пэўныя пытанні могуць быць значнымі для вас, а пэўныя, наадварот, адцягваць ўвагу ад асноўных. Таму актыўнае выкарыстанне функцыі “Значна” дазволіць супольнасці бачыць тэндэнцыі абмеркавання законапраекта.</li>
 <li>Акрамя значнасці або нязначнасці пытанняў, можна ўздзейнічаць на самі аргументы. Калі вы лічыце той ці іншы аргумент значным, адзначайце стрэлкай уверх, інакш - стрэлкай уніз.</li>
 </ol>
-<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/navigation-two.png" alt="" width="900">
+<center><img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/navigation-two.png" alt="" width="900"></center>
 
 <p><strong>Дарэчы</strong>: у верхнім меню злева магчыма сартыраваць запісы альбо па значнасці, альбо па часе дадавання.</p>
-
+<br/><br/>
 <h2>Робім пошук і цэтлікі</h2>
 
 <p>Працягваем вучыцца карыстацца платформай Інструмент Удзелу.</p>
@@ -114,7 +114,7 @@ $language   = $sTemplate->getLangBase();
 <li>Як дадаваць цэтлікі. Гэтак жа, як і самі пытанні. Дарэчы, іх можна або выправіць, або дадаць пры рэдагаванні пытання.</li>
 <li>Усё гэта патрэбна для таго, каб потым было зручней карыстацца платформай і прасцей шукаць патрэбныя пытанні або каментары.</li>
 </ol>
-<img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/search-with-tag.png" alt="" width="900">
+<center><img src="<?php echo $sTemplate->getTemplateRoot(); ?>img/help/search-with-tag.png" alt="" width="900"></center>
 
 <p>Вось і ўсё. <strong>Будзьце</strong> актыўнымі!</p>
 
