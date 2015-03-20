@@ -50,12 +50,12 @@ $language   = $sTemplate->getLangBase();
 
 <p>Сёння раз'яднанасць прававых актаў, прабелы ў заканадаўстве ў пэўнай ступені перашкаджаюць развіццю дабрачыннай дзейнасці, спонсарства, не дазваляючы некамерцыйным арганізацыям, іншым юрыдычным асобам, а таксама грамадзянам стаць паўнапраўнымі партнёрамі дзяржавы ў выкананні яго сацыяльных функцый.</p>
 
-<p>Рэалізацыя законапраекта будзе садзейнічаць павелічэнню ролі дабрачынных арганізацый ў грамадскім жыцці, стымуляванню і павышэнню эфектыўнасці іх грамадска карыснай дзейнасці, ўстанаўлення празрыстасці і справаздачнасці іх грамадству.</p>
+<p>Рэалізацыя законапраекта будзе садзейнічаць павелічэнню ролі дабрачынных арганізацый ў грамадскім жыцці, стымуляванню і павышэнню эфектыўнасці іх грамадска карыснай дзейнасці, ўстанаўленню празрыстасці і справаздачнасці іх грамадству.</p>
 </div>
 </br>
 
 	<div id = "big_orange_button">
-		<a href = "https://github.com/falanster/charity-docs/blob/master/actual/Proekt-Zakona-OPD-10-20-2014.doc?raw=true">
+		<a href = "https://github.com/falanster/charity-docs/blob/master/30.12.2014/Proekt-Zakona-OPD-30-12-2014.docx?raw=true">
 			<button class = 'big_button_orange'>спампаваць законапраект</button>
 		</a>
 	</div>
@@ -71,8 +71,9 @@ $language   = $sTemplate->getLangBase();
 <h3>Усе версіі законапраекта:</h3>
 <p>
 <ul>
+<li><a href="https://github.com/falanster/charity-docs/blob/master/30.12.2014/Proekt-Zakona-OPD-30-12-2014.docx?raw=true">Версія ад 30.12.2014</a>(абмяркоўваем)</li>
 <li><a href="https://github.com/falanster/charity-docs/blob/master/17.11.2014/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0-%D0%BE%D0%B1-%D0%9E%D0%9F%D0%94-17-11-2014.doc">Версія ад 17.11.2014</a></li>
-<li><a href="https://github.com/falanster/charity-docs/blob/master/20.10.2014/Proekt-Zakona-OPD-10-20-%D0%B1%D0%B5%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2.doc?raw=true">Версія ад 20.10.2014</a> (абмяркоўваем)</li>
+<li><a href="https://github.com/falanster/charity-docs/blob/master/20.10.2014/Proekt-Zakona-OPD-10-20-%D0%B1%D0%B5%D0%B7-%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2.doc?raw=true">Версія ад 20.10.2014</a></li>
 <li><a href="https://github.com/falanster/charity-docs/blob/master/10.10.2014/Proekt-Zakona-OPD-10-10-2014.doc?raw=true">Версія ад 10.10.2014</a></li>
 <li><a href="https://github.com/falanster/charity-docs/blob/master/15.09.2014/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82-%D0%97%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0-%D0%BE%D0%B1-%D0%9E%D0%9F%D0%94-09-15-%D0%BE%D1%80%D0%B8%D0%B3%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82.doc?raw=true">Версія ад 15.09.2014</a></li>
 </ul>
