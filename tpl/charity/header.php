@@ -94,7 +94,6 @@ if($sPage->group())
   <link rel = "stylesheet" type = "text/css" href = "<?php echo $sTemplate->getTemplateRoot(); ?>css/commons.css.php" />
 
 
-
   <script type='text/javascript' src='<?php echo $sTemplate->getTemplateRoot(); ?>js/jquery.min.js'></script>
   <script type='text/javascript' src='<?php echo $sTemplate->getTemplateRoot(); ?>js/jquery-ui.min.js'></script>
   <script type='text/javascript' src='<?php echo $sTemplate->getTemplateRoot(); ?>js/jquery.jlabel-1.3.min.js'></script>
@@ -103,7 +102,7 @@ if($sPage->group())
   <script type='text/javascript' src='<?php echo $sTemplate->getTemplateRoot(); ?>js/wikiargument.js.php'></script>
   <script type='text/javascript' src='<?php echo $sTemplate->getTemplateRoot(); ?>js/wikiargument_ui.js.php'></script>
 
-
+  <?php include_once("analyticstracking.php") ?>	
 
 </head>
 <?php flush(); ?>
