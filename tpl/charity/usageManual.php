@@ -47,11 +47,13 @@ $language   = $sTemplate->getLangBase();
 		<?php //echo $sTemplate->getString("USAGE_MANUAL"); ?>
 		
 		
-		<h2>Агульны інтэрфэйс платформы</h2>
+<h2>Агульны інтэрфэйс платформы</h2>
 
 <p>Прывітанне ўсім, хто апынуўся на платформе Інструмент Удзелу!<br />
 Спадзяемся, вы плённа праведзяце час тут. У гэтым апісанні вы даведаецеся, як карыстацца платформай 
 <a href = '<?php echo $sTemplate->getRoot(); ?>'>Інструмент Удзелу</a>, і потым будзеце пачуваць сябе тут нашмат камфортней.</p>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/d6XSVXRCbA4" frameborder="0" allowfullscreen></iframe>
 
 <ol>
 <li>Пачнем з рэгістрацыі. Робіцца гэта вельмі проста:
@@ -68,6 +70,8 @@ $language   = $sTemplate->getLangBase();
 
 <p>Тут мы навучымся дадаваць свае пытанні для абмеркавання на платформе “Інструмент Удзелу”.</p>
 
+<iframe width="853" height="480" src="https://www.youtube.com/embed/toq1QKzOJ2g" frameborder="0" allowfullscreen></iframe>
+
 <ol>
 <li>Для гэтага ціснем на адмысловую кнопку і апынаемся 
 <a href = '<?php echo $sTemplate->getRoot(); ?>new-question/'>на патрэбнай старонцы</a>.</li>
@@ -79,6 +83,8 @@ $language   = $sTemplate->getLangBase();
 <h2>Як дадаць аргумент?</h2>
 
 <p>Любую прапанову вы можаце альбо падтрымаць, альбо не падтрымаць.</p>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/v6uYjTtIosk" frameborder="0" allowfullscreen></iframe>
 
 <ol>
 <li>Калі ёсць думкі ў падтрымку, можаце дадаць аргумент. Але майце на ўвазе: загаловак мусіць быць таксама лаканічным – не даўжэй за 25 сімвалаў. Апісанне – не болей за 140. </li>
@@ -94,6 +100,8 @@ $language   = $sTemplate->getLangBase();
 <h2>Галасаванне і прасоўванне пытанняў і аргументаў</h2>
 
 <p>Працягваем вучыцца карыстацца платформай Інструмент Удзелу і зараз пагутарым пра галасаванне і прасоўванне.</p>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/lDfsJJpFYns" frameborder="0" allowfullscreen></iframe>
 
 <ol>
 <li>Для таго, каб іншым было бачна, наколькі пытанне выклікае ці не выклікае падтрымку дыскусантаў, у Інструменце Ўдзелу вы можаце галасаваць за або супраць прапановы.</li>
