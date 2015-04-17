@@ -55,7 +55,7 @@ $language   = $sTemplate->getLangBase();
 </br>
 
 	<div id = "big_orange_button">
-		<a href = "https://github.com/falanster/charity-docs/blob/master/30.12.2014/Proekt-Zakona-OPD-30-12-2014.docx?raw=true">
+		<a href = "https://github.com/falanster/charity-docs/blob/master/15.04.2015/Proekt-Zakona-OPD-15-04-2015.docx?raw=true">
 			<button class = 'big_button_orange'>спампаваць законапраект</button>
 		</a>
 	</div>
