@@ -176,7 +176,7 @@ if($sPage->getQuestion() && $sPage->getQuestion()->type() == QUESTION_TYPE_UNLIS
 	
 	<div id = "header_orange_button">
 		<a href = '<?php echo $sTemplate->getRoot(); ?>discussion/'>
-			<button class = 'header_button_orange second button_new_question'><p class="big_button_text"><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></p><p class="small_button_text">30.12.2014</p></button>
+			<button class = 'header_button_orange second button_new_question'><p class="big_button_text"><?php echo $sTemplate->getString("HTML_META_TITLE_DISCUSSION"); ?></p><p class="small_button_text">15.04.2015</p></button>
 		</a>
 	</div>
 
