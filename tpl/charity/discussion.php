@@ -65,7 +65,7 @@ $language   = $sTemplate->getLangBase();
 </br>
 <h3>План стварэння </h3>
 <p><a href="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_1.png" target="_blank"><img src="<?php echo $sTemplate->getRoot(); ?>tpl/charity/img/plan/time_line_1.png" style="min-width: 760px; width: 100%"></a></p>
-<p>Этап распрацоўкі законапраекта адбываецца з дапамогай платформы “Інструмент удзелу”. Кожны чалавек можа <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'>зарэгістравацца </a> на сайце, удзельнічаць у існых абмеркаваннях і галасаваннях, дадаваць свае прапановы, аргументы і контр-аргументы. Падрабязней пра працу платформы глядзіце на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>“Як карыстацца”</a>, а  пра правілы паводзінаў на сайце - на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>license/'>“Правілы і ліцэнзія”</a>. </p>
+<p>Этап распрацоўкі законапраекта адбываецца з дапамогай платформы Інструмент Удзелу. Кожны чалавек можа <a href = '<?php echo $sTemplate->getRoot(); ?>signup/'>зарэгістравацца </a> на сайце, удзельнічаць у існых абмеркаваннях і галасаваннях, дадаваць свае прапановы, аргументы і контр-аргументы. Падрабязней пра працу платформы глядзіце на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>usage-manual/'>“Як карыстацца”</a>, а  пра правілы паводзінаў на сайце - на старонцы <a href = '<?php echo $sTemplate->getRoot(); ?>license/'>“Правілы і ліцэнзія”</a>. </p>
 </div>
 </br>
 <div>
